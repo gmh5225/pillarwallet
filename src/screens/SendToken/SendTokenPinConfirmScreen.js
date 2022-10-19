@@ -31,7 +31,6 @@ import { resetIncorrectPasswordAction } from 'actions/authActions';
 import { logEventAction, appsFlyerlogEventAction } from 'actions/analyticsActions';
 
 // Constants
-import { SEND_TOKEN_TRANSACTION } from 'constants/navigationConstants';
 import { CHAIN } from 'constants/chainConstants';
 
 // Types
@@ -44,6 +43,7 @@ import type { Dispatch, RootReducerState } from 'reducers/rootReducer';
 import { isLogV2AppEvents } from 'utils/environment';
 import { getActiveAccountType } from 'utils/accounts';
 import { currentDate, currentTime } from 'utils/date';
+import { handleDismissal } from 'utils/dismiss';
 
 type Props = {
   navigation: NavigationScreenProp<*>,
@@ -63,7 +63,7 @@ type Props = {
 type State = {
   transactionPayload: TransactionPayload,
   isChecking: boolean,
-  errorMessage?: ?string;
+  errorMessage?: ?string,
 };
 
 class SendTokenPinConfirmScreen extends React.Component<Props, State> {
@@ -73,7 +73,7 @@ class SendTokenPinConfirmScreen extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
     const { navigation } = props;
-    const transactionPayload = navigation.getParam('transactionPayload', { });
+    const transactionPayload = navigation.getParam('transactionPayload', {});
     this.source = navigation.getParam('source', '');
     this.goBackDismiss = navigation.getParam('goBackDismiss', false);
     this.state = {
@@ -83,13 +83,7 @@ class SendTokenPinConfirmScreen extends React.Component<Props, State> {
   }
 
   handleTransaction = async (pin, wallet) => {
-    const {
-      sendAsset,
-      isOnline,
-      logEvent,
-      logAppsFlyerEvent,
-      accounts,
-    } = this.props;
+    const { sendAsset, isOnline } = this.props;
     const { transactionPayload } = this.state;
 
     if (!isOnline) {
@@ -106,37 +100,39 @@ class SendTokenPinConfirmScreen extends React.Component<Props, State> {
       return;
     }
 
-    const { to: recipient, symbol, amount, chain: chainName = CHAIN.ETHEREUM } = transactionPayload;
-
     this.setState(
       {
         isChecking: true,
       },
       () => {
-        logEvent('transaction_sent', { source: this.source });
-        isLogV2AppEvents() &&
-          // eslint-disable-next-line i18next/no-literal-string
-          logAppsFlyerEvent(`transaction_sent_${chainName}`, {
-            token: `${symbol}}`,
-            chain: chainName,
-            amount_swapped: amount,
-            date: currentDate(),
-            time: currentTime(),
-            address: recipient,
-            platform: Platform.OS,
-            walletType: getActiveAccountType(accounts),
-          });
         sendAsset(transactionPayload, wallet.privateKey, this.navigateToTransactionState);
       },
     );
   };
 
   navigateToTransactionState = (params: ?Object) => {
-    const { navigation } = this.props;
+    const { logEvent, logAppsFlyerEvent, accounts, navigation } = this.props;
     const { transactionPayload } = this.state;
+    const { to: recipient, symbol, amount, chain: chainName = CHAIN.ETHEREUM } = transactionPayload;
     const transactionType = navigation.getParam('transactionType', '');
 
-    navigation.navigate(SEND_TOKEN_TRANSACTION, { ...params, transactionPayload, transactionType });
+    logEvent('transaction_sent', { source: this.source });
+    isLogV2AppEvents() &&
+      // eslint-disable-next-line i18next/no-literal-string
+      logAppsFlyerEvent(`transaction_sent_${chainName}`, {
+        token: `${symbol}}`,
+        chain: chainName,
+        amount_swapped: amount,
+        date: currentDate(),
+        time: currentTime(),
+        address: recipient,
+        platform: Platform.OS,
+        walletType: getActiveAccountType(accounts),
+      });
+
+    handleDismissal({ ...params, transactionPayload, transactionType, navigation });
+
+    // navigation.navigate(SEND_TOKEN_TRANSACTION, { ...params, transactionPayload, transactionType });
   };
 
   handleBack = () => {
@@ -168,8 +164,12 @@ class SendTokenPinConfirmScreen extends React.Component<Props, State> {
 
 const mapStateToProps = ({
   accounts: { data: accounts },
-  session: { data: { isOnline } },
-  appSettings: { data: { useBiometrics } },
+  session: {
+    data: { isOnline },
+  },
+  appSettings: {
+    data: { useBiometrics },
+  },
 }: RootReducerState): $Shape<Props> => ({
   useBiometrics,
   accounts,
@@ -177,15 +177,11 @@ const mapStateToProps = ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch): $Shape<Props> => ({
-  sendAsset: (
-    transaction: TransactionPayload,
-    privateKey: string,
-    callback: (status: TransactionStatus) => void,
-  ) => dispatch(sendAssetAction(transaction, privateKey, callback)),
+  sendAsset: (transaction: TransactionPayload, privateKey: string, callback: (status: TransactionStatus) => void) =>
+    dispatch(sendAssetAction(transaction, privateKey, callback)),
   resetIncorrectPassword: () => dispatch(resetIncorrectPasswordAction()),
   logEvent: (name: string, properties: Object) => dispatch(logEventAction(name, properties)),
   logAppsFlyerEvent: (name: string, properties: Object) => dispatch(appsFlyerlogEventAction(name, properties)),
 });
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(SendTokenPinConfirmScreen);
