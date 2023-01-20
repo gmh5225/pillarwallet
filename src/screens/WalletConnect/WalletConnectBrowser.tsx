@@ -26,7 +26,7 @@ const WalletConnectBrowser: FC = () => {
       <HeaderBlock
         leftItems={[{ close: true }]}
         centerItems={[{ title: title }]}
-        navigation={navigation}
+        onClose={() => navigation.dismiss()}
         noPaddingTop
       />
       <InAppBrowser initialUrl={url} iconUrl={iconUrl} />

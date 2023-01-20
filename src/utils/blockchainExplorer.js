@@ -18,8 +18,8 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-import { Linking } from 'react-native';
 import t from 'translations/translate';
+import { NavigationActions } from 'react-navigation';
 
 // Components,
 import Toast from 'components/Toast';
@@ -30,6 +30,10 @@ import { isArchanovaAccount, isEtherspotAccount } from 'utils/accounts';
 // Services
 import archanovaService from 'services/archanova';
 import etherspotService from 'services/etherspot';
+import { navigate } from 'services/navigation';
+
+// Constants
+import { WALLETCONNECT_BROWSER } from 'constants/navigationConstants';
 
 // Types
 import type { Account } from 'models/Account';
@@ -41,10 +45,7 @@ type ViewableTransaction = {
   fromAccount: ?Account,
 };
 
-export async function viewTransactionOnBlockchain(
-  chain: Chain,
-  transaction: ViewableTransaction,
-) {
+export async function viewTransactionOnBlockchain(chain: Chain, transaction: ViewableTransaction) {
   const { hash, batchHash, fromAccount } = transaction;
 
   if (!hash && !batchHash) {
@@ -77,5 +78,12 @@ export async function viewTransactionOnBlockchain(
     return;
   }
 
-  Linking.openURL(explorerLink);
+  navigate(
+    NavigationActions.navigate({
+      routeName: WALLETCONNECT_BROWSER,
+      params: {
+        url: explorerLink,
+      },
+    }),
+  );
 }
