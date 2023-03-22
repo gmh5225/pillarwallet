@@ -145,7 +145,7 @@ export function useAssetCategoriesConfig(): { [key: AssetCategory]: AssetCategor
     [ASSET_CATEGORY.INVESTMENTS]: {
       title: t('assetCategories.investments'),
       titleShort: t('assetCategoriesShort.investments'),
-      iconName: 'investment',
+      iconName: 'dashboard-investment',
       chartColor: '#5727b0',
     },
     [ASSET_CATEGORY.LIQUIDITY_POOLS]: {
@@ -163,7 +163,7 @@ export function useAssetCategoriesConfig(): { [key: AssetCategory]: AssetCategor
     [ASSET_CATEGORY.APPS]: {
       title: t('home.apps.title'),
       titleShort: t('home.apps.title'),
-      iconName: 'investment',
+      iconName: 'app-holdings',
       chartColor: '#5727b0',
     },
     [ASSET_CATEGORY.REWARDS]: {

@@ -48,7 +48,7 @@ import { isArchanovaAccount, isKeyBasedAccount } from 'utils/accounts';
 
 // Components
 import WalletSelection from 'components/Wallet/WalletSelection';
-import InvestmentListItem from 'components/lists/InvestmentListItem';
+import AppHoldingsListItem from 'components/lists/AppHoldingsListItem';
 
 // Types
 import type { AssetCategory, AssetCategoryRecordKeys } from 'models/AssetCategory';
@@ -113,10 +113,14 @@ function AssetsSection({ accountTotalBalances, accountCollectibleCounts, visible
   const renderCategoryWithBalance = (category: AssetCategoryRecordKeys) => {
     const balance =
       category === ASSET_CATEGORY.APPS ? totalBalanceOfHoldings : balancePerCategory[category] ?? BigNumber(0);
-    const formattedBalance = formatFiatValue(balance, fiatCurrency);
+    const formattedBalance = category === ASSET_CATEGORY.INVESTMENTS ? null : formatFiatValue(balance, fiatCurrency);
 
     const { title, iconName } = categoriesConfig[category];
     const showChains = showChainsPerCategory[category] ?? false;
+
+    const isVisibleWallet = showChains && category === ASSET_CATEGORY.WALLET;
+    // const isVisibleInvestments = showChains && category === ASSET_CATEGORY.INVESTMENTS;
+    const isVisibleAppsHoldings = showChains && category === ASSET_CATEGORY.APPS;
 
     return (
       <React.Fragment key={`${category}-fragment`}>
@@ -130,7 +134,7 @@ function AssetsSection({ accountTotalBalances, accountCollectibleCounts, visible
             onPress={() => handlePressAssetCategory(category)}
           />
         </SubContainer>
-        {showChains && category === ASSET_CATEGORY.WALLET && (
+        {isVisibleWallet && (
           <SubContainer>
             <WalletSelection />
           </SubContainer>
@@ -139,9 +143,8 @@ function AssetsSection({ accountTotalBalances, accountCollectibleCounts, visible
           category !== ASSET_CATEGORY.APPS &&
           category !== ASSET_CATEGORY.WALLET &&
           chains.map((chain) => renderChainWithBalance(category, chain))}
-        {showChains &&
-          category === ASSET_CATEGORY.APPS &&
-          appHoldings?.slice(0, 5).map((item, index) => renderInvestments(category, item, index))}
+        {isVisibleAppsHoldings &&
+          appHoldings?.slice(0, 5).map((item, index) => renderAppHoldings(category, item, index))}
       </React.Fragment>
     );
   };
@@ -167,13 +170,14 @@ function AssetsSection({ accountTotalBalances, accountCollectibleCounts, visible
     );
   };
 
-  const renderInvestments = (category: AssetCategoryRecordKeys, item: AppHoldings, index: number) => {
+  const renderAppHoldings = (category: AssetCategoryRecordKeys, item: AppHoldings, index: number) => {
     const { name, network } = item;
 
     const isSelected = visibleHoldingsIndex === index;
 
+    // return null;
     return (
-      <InvestmentListItem
+      <AppHoldingsListItem
         key={`${name}-${network}`}
         {...item}
         isSelected={isSelected}

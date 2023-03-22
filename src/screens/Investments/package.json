@@ -1,0 +1,6 @@
+{
+  "name": "investments",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Investments.tsx"
+}

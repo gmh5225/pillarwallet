@@ -41,7 +41,7 @@ import type { AssetCategory } from 'models/AssetCategory';
 
 // Local
 import WalletTab from './wallet/WalletTab';
-import InvestmentsTab from './investments/InvestmentsTab';
+import AppsHoldingsTab from './apps/AppHoldingsTab';
 import CollectiblesTab from './collectibles/CollectiblesTab';
 
 type Props = {
@@ -58,7 +58,7 @@ function Assets({ onBackPress }: Props) {
     { key: CATEGORY.WALLET, title: config[CATEGORY.WALLET].title, component: WalletTab },
     // { key: CATEGORY.DEPOSITS, title: config[CATEGORY.DEPOSITS].title, component: DepositsTab },
     // { key: CATEGORY.INVESTMENTS, title: config[CATEGORY.INVESTMENTS].title, component: InvestmentsTab },
-    { key: CATEGORY.APPS, title: config[CATEGORY.APPS].title, component: InvestmentsTab },
+    { key: CATEGORY.APPS, title: config[CATEGORY.APPS].title, component: AppsHoldingsTab },
     // Temporarily hide rewards tab until rewards fetching is implemented
     // { key: CATEGORY.REWARDS, title: config[CATEGORY.REWARDS].title, component: RewardsTab },
   ];

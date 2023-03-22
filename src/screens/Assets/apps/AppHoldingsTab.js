@@ -47,7 +47,7 @@ import type { AppHoldings } from 'models/Investment';
 // Hooks
 import { useAppHoldings } from 'hooks/apps';
 
-function InvestmentsTab() {
+function AppHoldingsTab() {
   const { t, tRoot } = useTranslationWithPrefix('assets.investments');
   const navigation = useNavigation();
   const safeArea = useSafeAreaInsets();
@@ -126,7 +126,7 @@ function InvestmentsTab() {
   );
 }
 
-export default InvestmentsTab;
+export default AppHoldingsTab;
 
 const styles = {
   balanceView: {
