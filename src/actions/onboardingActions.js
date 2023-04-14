@@ -83,11 +83,7 @@ import {
   initEtherspotServiceAction,
   fetchDefaultTokensRates,
 } from 'actions/etherspotActions';
-import {
-  fetchSupportedAssetsAction,
-  fetchOfflineLocalAssets,
-  fetchAllAccountsTotalBalancesAction,
-} from 'actions/assetsActions';
+import { fetchSupportedAssetsAction, fetchOfflineLocalAssets } from 'actions/assetsActions';
 import { fetchTutorialDataIfNeededAction, bannerDataAction } from 'actions/cmsActions';
 import { initialDeepLinkExecutedAction } from 'actions/appSettingsActions';
 import { addAccountAction, deployAccounts } from 'actions/accountsActions';
@@ -342,6 +338,9 @@ export const walletSetupAction = (enableBiometrics?: boolean) => {
     logBreadcrumb('onboarding', 'walletSetupAction: dispatching saveDbAction for saving app settings');
     dispatch(saveDbAction('app_settings', { appSettings: { wallet: +new Date() } }));
 
+    logBreadcrumb('onboarding', 'walletSetupAction: dispatching setupAppServicesAction');
+    await dispatch(setupAppServicesAction(privateKey));
+
     if (onboardingUsername) {
       await dispatch(setupUserAction(onboardingUsername?.username));
     } else {
@@ -349,16 +348,7 @@ export const walletSetupAction = (enableBiometrics?: boolean) => {
       await dispatch(setupAddressAction());
     }
 
-    logBreadcrumb('onboarding', 'walletSetupAction: dispatching setupAppServicesAction');
-    await dispatch(setupAppServicesAction(privateKey));
-
-    logBreadcrumb('onboarding', 'walletSetupAction: dispatching initialDeepLinkExecutedAction');
-    dispatch(initialDeepLinkExecutedAction());
-
-    dispatch(bannerDataAction());
-
-    logBreadcrumb('onboarding', 'walletSetupAction: dispatching deployAccounts');
-    dispatch(deployAccounts());
+    await dispatch(extraOnboardingAction());
 
     logBreadcrumb('onboarding', 'walletSetupAction: completed, dispatching SET_FINISHING_ONBOARDING');
     isLogV2AppEvents() && dispatch(logEventAction('v2_account_sign_up_completed'));
@@ -369,7 +359,7 @@ export const walletSetupAction = (enableBiometrics?: boolean) => {
 export const setupAppServicesAction = (privateKey: ?string) => {
   return async (dispatch: Dispatch, getState: GetState) => {
     const {
-      wallet: { backupStatus, data: walletData },
+      wallet: { data: walletData },
       session: {
         data: { isOnline },
       },
@@ -408,18 +398,15 @@ export const setupAppServicesAction = (privateKey: ?string) => {
     logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching initEtherspotServiceAction');
     await dispatch(initEtherspotServiceAction(privateKey));
 
-    // user might not be registered at this point
-    await dispatch(fetchSupportedAssetsAction());
+    // create Etherspot accounts
+    logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching importEtherspotAccountsAction');
+    await dispatch(importEtherspotAccountsAction());
 
     // create Archanova accounts if needed
     if (!isNewUser) {
       logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching importArchanovaAccountsIfNeededAction');
       await dispatch(importArchanovaAccountsIfNeededAction(privateKey));
     }
-
-    // create Etherspot accounts
-    logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching importEtherspotAccountsAction');
-    await dispatch(importEtherspotAccountsAction());
 
     // create key based accounts
     if (walletData?.address) {
@@ -428,19 +415,28 @@ export const setupAppServicesAction = (privateKey: ?string) => {
     } else {
       logBreadcrumb('onboarding', 'setupAppServicesAction: cannot find key based address');
     }
+  };
+};
 
-    // by default fetch default tokens
+export const extraOnboardingAction = () => {
+  return async (dispatch: Dispatch, getState: GetState) => {
+    const {
+      wallet: { backupStatus },
+      onboarding: { isNewUser: isNewUserState },
+    } = getState();
+
     logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching fetchDefaultTokensRates');
-    dispatch(fetchDefaultTokensRates());
+    await dispatch(fetchDefaultTokensRates());
 
-    logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching fetchAllAccountsTotalBalancesAction');
-    dispatch(fetchAllAccountsTotalBalancesAction());
+    if (!isNewUserState) {
+      await dispatch(fetchSupportedAssetsAction());
 
-    logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching fetchTransactionsHistoryAction');
-    dispatch(fetchTransactionsHistoryAction());
+      logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching fetchTransactionsHistoryAction');
+      dispatch(fetchTransactionsHistoryAction());
 
-    logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching rates action: fetchAssetsRatesAction');
-    await dispatch(fetchAssetsRatesAction());
+      logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching rates action: fetchAssetsRatesAction');
+      await dispatch(fetchAssetsRatesAction());
+    }
 
     logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching managePPNInitFlagAction');
     dispatch(managePPNInitFlagAction());
@@ -468,6 +464,14 @@ export const setupAppServicesAction = (privateKey: ?string) => {
 
     logBreadcrumb('onboarding', 'setupAppServicesAction: dispatching loadRemoteConfigWithUserPropertiesAction');
     dispatch(loadRemoteConfigWithUserPropertiesAction());
+
+    logBreadcrumb('onboarding', 'walletSetupAction: dispatching initialDeepLinkExecutedAction');
+    dispatch(initialDeepLinkExecutedAction());
+
+    dispatch(bannerDataAction());
+
+    logBreadcrumb('onboarding', 'walletSetupAction: dispatching deployAccounts');
+    dispatch(deployAccounts());
   };
 };
 

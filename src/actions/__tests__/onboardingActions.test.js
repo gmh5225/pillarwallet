@@ -27,13 +27,11 @@ import { SET_WALLET, UPDATE_WALLET_BACKUP_STATUS, SET_WALLET_IS_ENCRYPTING } fro
 import { SET_ONBOARDING_USERNAME_REGISTRATION_FAILED, SET_REGISTERING_USER } from 'constants/onboardingConstants';
 import { UPDATE_SESSION } from 'constants/sessionConstants';
 import { SET_USER } from 'constants/userConstants';
-import { SET_ARCHANOVA_WALLET_ACCOUNTS, SET_ARCHANOVA_SDK_INIT } from 'constants/archanovaConstants';
+import { SET_ARCHANOVA_SDK_INIT } from 'constants/archanovaConstants';
 import { UPDATE_ACCOUNTS } from 'constants/accountsConstants';
-import { ETH, PLR, SET_CHAIN_SUPPORTED_ASSETS } from 'constants/assetsConstants';
-import { SET_FETCHING_HISTORY, SET_HISTORY } from 'constants/historyConstants';
-import { SET_FETCHING_RATES } from 'constants/ratesConstants';
+import { SET_CHAIN_SUPPORTED_ASSETS } from 'constants/assetsConstants';
+
 import { CHAIN } from 'constants/chainConstants';
-import { SET_FETCHING_TOTAL_BALANCES } from 'constants/totalsBalancesConstants';
 
 // actions
 import { setupAppServicesAction, setupUserAction, setupWalletAction } from 'actions/onboardingActions';
@@ -50,10 +48,7 @@ import {
   mockArchanovaAccount,
   mockArchanovaAccountApiData,
   mockArchanovaConnectedAccount,
-  mockSupportedAssets,
   mockEtherspotAccountExtra,
-  mockEthAddress,
-  mockPlrAddress,
   mockDeviceUniqueId,
 } from 'testUtils/jestSetup';
 
@@ -99,19 +94,6 @@ const randomPrivateKey = '0x09e910621c2e988e9f7f6ffcd7024f54ec1461fa6e86a4b545e9
 
 const mockNewArchanovaAccount = { ...mockArchanovaAccount, extra: mockArchanovaAccountApiData };
 const mockNewEtherspotAccount = { ...mockEtherspotAccount, extra: mockEtherspotAccountExtra };
-
-const mockAssetsBalancesStore = {
-  data: {
-    [mockEtherspotAccount.id]: {
-      ethereum: {
-        wallet: {
-          [mockEthAddress]: { balance: '1', symbol: ETH, address: mockEthAddress },
-          [mockPlrAddress]: { balance: '1', symbol: PLR, address: mockPlrAddress },
-        },
-      },
-    },
-  },
-};
 
 describe('Onboarding actions', () => {
   let store;
@@ -227,33 +209,16 @@ describe('Onboarding actions', () => {
       user: { data: mockUser },
       accounts: { data: [] },
       smartWallet: {},
-      assets: { supportedAssets: { ethereum: mockSupportedAssets } },
-      history: { data: {} },
-      assetsBalances: mockAssetsBalancesStore,
-      rates: { data: {} },
       badges: { data: [] },
-      totalBalances: {},
       onboarding: mockOnboarding,
     });
 
     const expectedActions = [
       { type: UPDATE_SESSION, payload: { fcmToken: mockFcmToken } },
-      {
-        type: SET_CHAIN_SUPPORTED_ASSETS,
-        payload: { chain: CHAIN.ETHEREUM, assets: mockSupportedAssets },
-      },
       { type: SET_ARCHANOVA_SDK_INIT, payload: true }, // archanova init for account check
 
       // etherspot
       { type: UPDATE_ACCOUNTS, payload: [mockNewEtherspotAccount] },
-
-      { payload: true, type: SET_FETCHING_TOTAL_BALANCES },
-      { payload: false, type: SET_FETCHING_TOTAL_BALANCES },
-
-      { type: SET_FETCHING_HISTORY, payload: true },
-      { type: SET_FETCHING_RATES, payload: true },
-      { type: SET_FETCHING_HISTORY, payload: false },
-      { type: SET_FETCHING_RATES, payload: false },
 
       // TODO: etherspot history update tba with separate PR
     ];
@@ -276,40 +241,17 @@ describe('Onboarding actions', () => {
       user: { data: mockUser },
       accounts: { data: [mockArchanovaAccount] },
       smartWallet: { connectedAccount: mockArchanovaConnectedAccount },
-      assets: { supportedAssets: { ethereum: mockSupportedAssets } },
-      history: { data: {} },
-      assetsBalances: mockAssetsBalancesStore,
-      rates: { data: {} },
       badges: { data: [] },
       walletEvents: { data: [] },
-      totalBalances: {},
       onboarding: mockOnboarding,
     });
 
     const expectedActions = [
       { type: UPDATE_SESSION, payload: { fcmToken: mockFcmToken } },
-      {
-        type: SET_CHAIN_SUPPORTED_ASSETS,
-        payload: { chain: CHAIN.ETHEREUM, assets: mockSupportedAssets },
-      },
       { type: SET_ARCHANOVA_SDK_INIT, payload: true }, // archanova init for account check
-
-      // archanova
-      { type: SET_ARCHANOVA_WALLET_ACCOUNTS, payload: [mockArchanovaAccountApiData] },
-      { type: UPDATE_ACCOUNTS, payload: [mockNewArchanovaAccount] },
 
       // etherspot
       { type: UPDATE_ACCOUNTS, payload: [mockNewArchanovaAccount, mockNewEtherspotAccount] },
-
-      { payload: true, type: SET_FETCHING_TOTAL_BALANCES },
-      { payload: false, type: SET_FETCHING_TOTAL_BALANCES },
-
-      { type: SET_FETCHING_HISTORY, payload: true },
-      { type: SET_FETCHING_RATES, payload: true },
-
-      { type: SET_HISTORY, payload: { [mockArchanovaAccount.id]: { ethereum: [] } } },
-
-      { type: SET_FETCHING_RATES, payload: false },
 
       // TODO: etherspot history update tba with separate PR
     ];
