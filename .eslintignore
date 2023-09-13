@@ -1,0 +1,18 @@
+.idea
+.circleci
+.vscode
+node_modules
+ios
+flow-typed
+android/
+src/utils/shim.js
+reports
+patches
+storybook/storyLoader.js
+old.android/
+old.ios/
+metro.config.js
+
+# TODO: ignore is temporary, remove with next connections change
+src/actions/connectionKeyPairActions.js
+src/utils/keyPairGenerator.js
