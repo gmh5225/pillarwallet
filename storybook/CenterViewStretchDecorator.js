@@ -17,9 +17,20 @@
     with this program; if not, write to the Free Software Foundation, Inc.,
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
+import React from 'react';
+import styled from 'styled-components/native';
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+const CenterViewStretchDecorator = styled.View`
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+`;
 
-AppRegistry.registerComponent(appName, () => App);
+export default (story: Function) => (
+  <CenterViewStretchDecorator>
+    {story()}
+  </CenterViewStretchDecorator>
+);
+
