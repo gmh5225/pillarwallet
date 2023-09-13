@@ -1,0 +1,6 @@
+{
+  "name": "radio-button",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./RadioButton.js"
+}

@@ -1,0 +1,1813 @@
+{
+  "aaveDeposit": "Aave Deposit",
+  "ensName": "ENS name",
+  "ethereum": "Ethereum",
+  "facebook": "Facebook",
+  "keyWallet": "Original key based",
+  "medium": "Medium",
+  "pillarNetwork": "Pillar Network",
+  "pillarTank": "Pillar Tank",
+  "poolTogether": "Pool Together",
+  "smartWallet": "Pillar v2 (Etherspot)",
+  "legacySmartWallet": "Pillar v1",
+  "telegram": "Telegram",
+  "twitter": "Twitter",
+  "youtube": "Youtube",
+  "ellipsedString": "{{string}}...",
+  "ellipsedMiddleString": "{{stringStart}}...{{stringEnd}}",
+
+  "ticketAmount": "{{count}} ticket",
+  "ticketAmount_plural": "{{count}} tickets",
+
+  "positiveValue": "+ {{value}}",
+  "negativeValue": "- {{value}}",
+  "positiveTokenValue": "+ {{value}} {{token}}",
+  "negativeTokenValue": "- {{value}} {{token}}",
+  "fiatValue": "{{symbol}}{{value}}",
+  "percentValue": "{{value}}%",
+  "positivePercentValue": "+{{value}}%",
+  "negativePercentValue": "-{{value}}%",
+  "tokenValue": "{{value}} {{token}}",
+  "totalValue": "Total {{value}}",
+  "estimatedValue": "≈ {{value}}",
+  "fetching": "Fetching rates…",
+  "fetchingAddress": "Fetching address...",
+  "fetch_failed": "Could not fetch rates",
+  "availableValue": "Available: {{value}}",
+  "ofValue": "of {{value}}",
+  "valueOfValue": "{{partOfValue}} of {{allValue}}",
+  "tokenFiatValue": "{{tokenValue}} ({{fiatValue}})",
+  "lessThanSignValue": "<{{value}}",
+  "moreThanSignValue": ">{{value}}",
+  "rangeValues": "{{fromValue}} - {{toValue}}",
+  "exchangeRate": "{{rate}} {{toSymbol}}/{{fromSymbol}}",
+  "timeDaysHours": "{{days}}d {{hours}}h",
+  "timeHoursMinutes": "{{hours}}h {{minutes}}m",
+  "timeDaysHoursMinutes": "{{days}}d {{hours}}h {{minutes}}m",
+  "inTimeDaysHoursMinutes": "In {{days}}d {{hours}}h {{minutes}}m",
+  "timeDaysHoursMinutesLayout": "{{days}} {{hours}} {{minutes}}",
+  "day": "{{count}} day",
+  "day_plural": "{{count}} days",
+  "hour": "{{count}} hour",
+  "hour_plural": "{{count}} hours",
+  "minute": "{{count}} minute",
+  "minute_plural": "{{count}} minutes",
+  "tutorialTitle": "Welcome to Pillar!",
+  "tutorialSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "smart_wallet": "Smart Wallet",
+  "key_wallet": "Key Wallet",
+
+  "units": {
+    "1e3": "{{value}}K",
+    "1e6": "{{value}}M",
+    "1e9": "{{value}}B",
+    "1e12": "{{value}}T"
+  },
+
+  "chains": {
+    "ethereum": "Ethereum",
+    "binance": "Binance Smart Chain",
+    "xdai": "Gnosis",
+    "polygon": "Polygon",
+    "optimism": "Optimism",
+    "optimism_kovan": "Optimism Kovan",
+    "gorli": "Ethereum Görli",
+    "sokol": "Gnosis Sokol",
+    "binance_test": "Binance Testnet",
+    "mumbai": "Polygon Mumbai",
+    "optimism_gorli": "Optimistic Görli",
+    "arbitrum": "Arbitrum",
+    "arbitrum_nitro": "Arbitrum Nitro"
+  },
+
+  "chainsShort": {
+    "ethereum": "Ethereum",
+    "binance": "BSC",
+    "xdai": "Gnosis",
+    "polygon": "Polygon",
+    "optimism": "Optimism",
+    "optimism_kovan": "Optimism Kovan",
+    "arbitrum": "Arbitrum"
+  },
+
+  "assetCategories": {
+    "wallet": "Wallet",
+    "deposits": "Deposits",
+    "investments": "Investments",
+    "liquidityPools": "Liquidity Pools",
+    "rewards": "Rewards",
+    "datasets": "Datasets",
+    "apps": "Apps",
+    "collectibles": "NFTs"
+  },
+
+  "assetCategoriesShort": {
+    "wallet": "Wallet",
+    "deposits": "Deposits",
+    "investments": "Investments",
+    "liquidityPools": "Pools",
+    "rewards": "Rewards",
+    "datasets": "Datasets",
+    "collectibles": "NFTs"
+  },
+
+  "onboardingLoaders": {
+    "initEtherspot": "Initializing Etherspot",
+    "loadingWallet": "Loading Wallets",
+    "creatingAccounts": "Creating Accounts",
+    "encryptingKeys": "Encrypting Keys",
+    "deployingGnosis": "Deploying Gnosis",
+    "fetchingTokens": "Fetching Tokens",
+    "fetchingPrices": "Fetching Prices",
+    "loadingTxHistory": "Loading Tx History",
+    "ready": "Ready!",
+    "noInternet": "No internet, retrying..."
+  },
+
+  "title": {
+    "accounts": "Switch account",
+    "addFundsToWallet": "Add funds to Pillar",
+    "mainActivityFeed": "History",
+    "publicAddress": "Public address",
+    "success": "Success",
+    "totalBalance": "Total balances",
+    "transactions": "Transactions",
+    "addNewContact": "Add new contact",
+    "editContact": "Edit contact",
+    "addressBook": "Address book",
+    "select": "Select",
+    "failed": "Failed",
+    "pending": "Pending",
+    "collectibleSent": "NFT sent",
+    "collectibleReceive": "NFT received",
+    "connectionRequested": "Requested",
+    "assets": "Assets",
+    "verifyBackupPhrase": "Verify backup phrase",
+    "confirmNewPin": "Confirm new pincode",
+    "enterNewPincode": "Enter new pincode",
+    "manageDevices": "Manage devices",
+    "noConnectedDevices": "No Connected Devices",
+    "confirm": "Confirm",
+    "privateKey": "Private key",
+    "exchange": "Exchange",
+    "unlockWithBiometrics": "Unlock with biometric sensor",
+    "welcome": "Welcome to Pillar Wallet!",
+    "seedPhrase": "12 words seed phrase",
+    "registerEnsName": "Register ENS name",
+    "portfolio_riskiness": "Portfolio Riskiness",
+    "chain_explorer": "{{title}} Explorer"
+  },
+
+  "label": {
+    "activate": "Activate",
+    "activateSmartWallet": "Activate Smart Wallet",
+    "activated": "Activated",
+    "added": "Added",
+    "adding": "Adding",
+    "all": "All",
+    "allNetwork": "All networks",
+    "backedUp": "Backup secured",
+    "canceled": "Canceled",
+    "collectibleFromUser": "NFT from {{username}}",
+    "collectibleToUser": "NFT to {{username}}",
+    "contactSupport": "Contact support",
+    "created": "Created",
+    "currentApyFormat": "Current APY: {{value}}",
+    "dotSeparator": "  ·  ",
+    "enabled": "Enabled",
+    "enableSmartWalletGasRelayerPLR": "Enable transaction fees with PLR",
+    "enabling": "Enabling",
+    "ended": "Ended",
+    "erc20TokensOnly": "ERC-20 tokens only",
+    "faceIDSettings": "Face ID Settings",
+    "feeToken": "Fee {{tokenValue}}",
+    "feeTokenFiat": "Fee {{tokenValue}} ({{fiatValue}})",
+    "fromKeyWallet": "from Key wallet",
+    "fromPPN": "from Pillar network",
+    "fromSmartWallet": "from Smart Wallet",
+    "imported": "Imported",
+    "incomingBalance": "Incoming balance",
+    "incomingSablierStream": "Incoming stream",
+    "keyWalletVisibilityToggle": "Legacy wallet (advanced)",
+    "loadingDefaultAssets": "Loading default assets",
+    "needToActivate": "Need to activate",
+    "network": "Network",
+    "newSmartWalletAccountDevice": "New Smart Wallet account device",
+    "notApplicable": "N/A",
+    "notEnoughGas": "Insufficient gas",
+    "notEnoughBalance": "Insufficient {{symbol}} balance",
+    "outgoingSablierStream": "Outgoing stream",
+    "purchase": "Purchase",
+    "received": "Received",
+    "receiving": "Receiving",
+    "registered": "Registered",
+    "registerEnsName": "Register ENS label",
+    "removed": "Removed",
+    "removing": "Removing",
+    "requested": "Requested",
+    "search": "Search",
+    "searchAsset": "Search asset",
+    "searchCollectible": "Search NFT",
+    "sending": "Sending",
+    "sent": "Sent",
+    "settle": "Settle",
+    "settlement": "Settlement",
+    "smartWalletAccountDevice": "Smart Wallet account device",
+    "smartWalletAccountDeviceAdded": "New account device added",
+    "smartWalletAccountDeviceRemoved": "Account device removed",
+    "smartWalletGasRelayerPLR": "Smart Wallet fees with PLR token",
+    "started": "Started",
+    "swapping": "Swapping",
+    "transactionDeploymentWarning": "Don't proceed if you don't want to deploy {{chain}} Smart Wallet.",
+    "transactionFee": "Transaction fee",
+    "smartWalletDeploy": "Smart wallet deployment",
+    "today": "Today",
+    "toKeyWallet": "to Key wallet",
+    "toPPN": "to Pillar Network",
+    "topUp": "Top up",
+    "toSmartWallet": "to Smart Wallet",
+    "wallet": "Wallet",
+    "withdraw": "Withdraw",
+    "withdrawal": "Withdrawal",
+    "yesterday": "Yesterday",
+    "yourEnsName": "Your wallet ENS name",
+    "name": "Name",
+    "address": "Address",
+    "resolvingEnsName": "Resolving ENS name",
+    "endingSoon": "Ending soon",
+    "endsIn": "Ends in {{endsIn}}",
+    "fetchingFee": "Fetching fee...",
+    "notEnoughToken": "Not enough {{token}}",
+    "fee": "Fee",
+    "gettingFee": "Getting fee...",
+    "to": "To",
+    "from": "From",
+    "whereToSend": "Where to send",
+    "sendTo": "Send to",
+    "walletAddress": "Wallet address",
+    "addressEnsUsername": "Address, ENS, Unstoppable Domains, FIO",
+    "addressSupportedNames": "Address, ENS, Unstoppable Domains, FIO",
+    "walletNotDeployed": "Wallet is not deployed",
+    "tokens": "Tokens",
+    "collectibles": "NFTs",
+    "collectible": "NFT",
+    "processing": "Processing...",
+    "mainAccount": "Main Account",
+    "free": "Free",
+    "estimatedFee": "Est. fee",
+    "estFee": "Est. fee",
+    "highGasFee": "  ·  High gas price",
+    "nothingFound": "Nothing found",
+    "verified": "Verified",
+    "select": "Select",
+    "selectCurrency": "Select currency",
+    "choseOption": "Choose option",
+    "noOptionsToSelect": "No options to select",
+    "availableBalance": "Available Balance",
+    "sendingToReceiver": "Sending to {{receiver}}",
+    "sentToReceiver": "It was sent to {{receiver}}",
+    "walletBalance": "Wallet balance {{balance}}",
+    "checking": "Checking",
+    "thisDevice": "This device",
+    "onHold": "On hold",
+    "deviceAddress": "Device address",
+    "noContacts": "No contacts",
+    "comingSoon": "Coming soon",
+    "buy": "Buy",
+    "sell": "Sell",
+    "unknown": "Unknown",
+    "pending": "Pending",
+    "fromPillarTank": "From Pillar Tank",
+    "pinChanged": "Pin changed",
+    "device": "Device {{address}}",
+    "popular": "Popular",
+    "set": "Set",
+    "notAvailableInYourCountry": "Not available in Your country",
+    "cannotProceedOffline": "Cannot proceed offline",
+    "payWithPLR": "Pay with PLR",
+    "notSet": "Not set",
+    "deposit": "Deposit",
+    "claim": "Claim",
+    "fromRariToWallet": "Rari Capital → Wallet",
+    "fromWalletToRari": "Wallet → Rari Capital",
+    "rewardsClaimed": "Rewards claimed",
+    "keyFacts": "Key facts",
+    "multiple": "Multiple",
+    "walletToPillarPay": "Wallet → Pillar Pay",
+    "pillarPayToWallet": "Pillar Pay → Wallet",
+    "fromToFormat": "{{from}} → {{to}}",
+    "completed": "Completed",
+    "failed": "Failed",
+    "assetMigration": "Asset migration",
+    "ensMigration": "ENS migration",
+    "archanovaToEtherspot": "Pillar V1 to Etherspot (Pillar V2)",
+    "archanovaToEtherspotShort": "Pillar V1 to Etherspot",
+    "deployed": "Deployed",
+    "notDeployed": "Not deployed",
+    "walletDeployment": "Wallet deployment",
+    "pleaseSelect": "Please select",
+    "balanceFiatTokenFormat": "Balance {{balanceInFiat}} ({{balance}})",
+    "balanceTokenFormat": "Balance: {{balance}}",
+    "filterByName": "Filter by name",
+    "username": "username",
+    "assetMigrate": "Migrate assets to Etherspot",
+    "ensMigrate": "Migrate ENS to Etherspot",
+    "transaction_submitted": "Transaction submitted",
+    "on_network": "on {{network}}",
+    "pool_activity": "Pool Activity",
+    "trading_activity": "Trading Activity",
+    "symbol_with_network": "{{symbol}} on {{network}}",
+    "on_position": "{{position}} position",
+    "of_stable": "{{percentage}}% of stables - {{type}}",
+    "high_risk": "high risk",
+    "risky": "risky",
+    "moderate_risk": "moderate risk",
+    "low_risk": "low risk",
+    "no_risk": "no risk",
+    "risk_assets": "{{percentage}}% of risky assets",
+    "risk_stable": "{{percentage}}% of low risk stables",
+    "add_tokens": "Add Tokens",
+    "custom_token_import": "Custom Token Import",
+    "number_of_tokens": "{{tokens}} tokens",
+    "find_token": "Find a token or input address",
+    "manageTokenLists": "Manage token lists",
+    "importCustomToken": "Import custom token",
+    "importNumberOfCustomToken": "Import {{tokens}} custom tokens",
+    "contractAddress": "Contract Address",
+    "erc20": " (ERС-20)",
+    "tokenExists": "This token is already exists",
+    "addedCustomToken": "Add a new custom token",
+    "pillarDefaultList": "Pillar Default List",
+    "offers": "Offers",
+    "best_offer": "Best offer",
+    "see_other_offers": "See other offers",
+    "see_less_offers": "See less offers",
+    "half_min": "30s",
+    "marketCap": "Market Cap",
+    "fdv": "FDV",
+    "totalLiquidity": "Tot. Liquidity",
+    "supply": "Supply",
+    "holders": "Holders",
+    "trandingVol": "Trading Vol.",
+    "allTimeHigh": "All-Time High",
+    "allTimeLow": "All-Time Low",
+    "your_balance": "Your Balance",
+    "volume_24": "Volume 24h",
+    "or": "or"
+  },
+
+  "button": {
+    "activate": "Activate",
+    "activatePPN": "Activate Pillar Network",
+    "add": "Add",
+    "addCash": "Add cash",
+    "addContact": "Add contact",
+    "addContacts": "Add contacts",
+    "addDetails": "Add details",
+    "addFunds": "Add funds",
+    "apply": "Apply",
+    "approve": "Approve",
+    "buyPLR": "Buy PLR",
+    "buyTokensWithCreditCard": "Buy tokens with credit card",
+    "buyTokens": "Buy tokens",
+    "buyWithCard": "Buy with a card",
+    "buyWithCardOrApplePay": "Buy with a card or Apple Pay",
+    "confirm": "Confirm",
+    "connect": "Connect",
+    "claim": "Claim",
+    "close": "Close",
+    "depositMore": "Deposit more",
+    "deploy": "Deploy",
+    "explore": "Explore",
+    "exchange": "Exchange",
+    "exchangeMore": "Exchange more",
+    "hide": "Hide",
+    "inviteAndGetTokens": "Invite and earn free tokens",
+    "inviteFriend": "Invite friend",
+    "inviteFriends": "Invite friends",
+    "inviteMoreFriends": "Invite more friends",
+    "inviteToPillar": "Invite to Pillar",
+    "notEnoughPLR": "Not enough PLR",
+    "purchase": "Purchase",
+    "purchaseMore": "Purchase more",
+    "pressTo": "Press to",
+    "referFriends": "Refer friends",
+    "reject": "Reject",
+    "retry": "Retry",
+    "receive": "Receive",
+    "seeOnEtherscan": "See on Etherscan",
+    "selectAll": "Select all",
+    "send": "Send",
+    "sendAll": "Send all",
+    "sendBack": "Send back",
+    "sendFromAnotherWallet": "Send from another wallet",
+    "sendMore": "Send more",
+    "settleMore": "Settle more",
+    "settleTransactions": "Settle transactions",
+    "shareAddress": "Share",
+    "share": "Share",
+    "smartWalletFAQ": "Smart Wallet FAQ",
+    "subscribe": "Subscribe",
+    "support": "Support",
+    "swap": "Swap",
+    "swipeConfirm": "Swipe to confirm",
+    "swipeSend": "Swipe to send",
+    "swipeTo": "Swipe to",
+    "topUp": "Top up",
+    "topUpMore": "Top up more",
+    "topUpPLRTank": "Top up PLR Tank",
+    "transferToSmartWallet": "Transfer to Smart Wallet",
+    "tryAgain": "Try again",
+    "viewAllItemsAmount": "View all {{amount}}",
+    "viewAll": "View all",
+    "viewBalance": "View balance",
+    "viewDeposit": "View deposit",
+    "viewOnBlockchain": "View on the blockchain",
+    "verify": "Verify",
+    "withdraw": "Withdraw",
+    "withdrawMore": "Withdraw more",
+    "delete": "Delete",
+    "save": "Save",
+    "next": "Next",
+    "confirmWithdraw": "Confirm withdraw",
+    "enable": "Enable",
+    "allow": "Allow",
+    "max": "Max",
+    "sendTokenInstead": "Send token instead",
+    "addToContacts": "Add to contacts",
+    "addToAddressBook": "Add to address book",
+    "paste": "Paste",
+    "resendIt": "Resend it",
+    "migrateAssetsToSmartWallet": "Migrate assets to Smart Wallet",
+    "continue": "Continue",
+    "remove": "Remove",
+    "cancel": "Cancel",
+    "skip": "Skip",
+    "edit": "Edit",
+    "magic": "Magic",
+    "disconnect": "Disconnect",
+    "open": "Open",
+    "proceed": "Proceed",
+    "readMore": "Read more",
+    "activateSmartWallet": "Activate Smart Wallet",
+    "finish": "Finish",
+    "claimMore": "Claim more",
+    "transferMore": "Transfer more",
+    "addMoreLiquidity": "Add more liquidity",
+    "removeMoreLiquidity": "Remove more liquidity",
+    "stakeMoreLiquidity": "Stake more",
+    "unstakeMoreLiquidity": "Unstake more",
+    "claimMoreRewards": "Claim more",
+    "back": "Back",
+    "native": "I know Crypto",
+    "new": "I'm new to Crypto",
+    "copyAddress": "Copy address",
+    "sendMax": "Send max",
+    "spendMax": "Spend max",
+    "useMax": "Use max",
+    "selectToken": "Select token...",
+    "more": "More",
+    "notNow": "Not now",
+    "copyToClipboard": "Copy to clipboard",
+    "savedPhrase": "I have saved my 12 words",
+    "savedPrivateKey": "I have saved my private key",
+    "openInBrowser": "Open in browser",
+    "ok": "OK",
+    "i_understand": "I understand",
+    "one_hour": "1 H",
+    "twentyfour_hour": "24 H",
+    "seven_day": "7 D",
+    "one_month": "1 M",
+    "one_year": "1 Y",
+    "today": "Today",
+    "last_week": "Last Week",
+    "last_month": "Last Month",
+    "last_year": "Last Year",
+    "token_analytics": "Token Analytics"
+  },
+
+  "paragraph": {
+    "addressCopiedToClipboard": "Address copied to clipboard.",
+    "doNotSendRealEthOrTokens": "Do not send real ETH or ERC20 tokens.",
+    "ensNameCopiedToClipboard": "ENS name copied to clipboard.",
+    "cameraPermissionMissing": "Camera permissions not granted - cannot open camera preview.",
+    "cameraPermission": "Camera Permission",
+    "needCameraPermission": "The camera permission is needed to open the WalletConnect QR code scanner",
+    "didNotReceiveVerificationCodeQuestion": "Didn't receive the code?",
+    "instructionsOnBackingUpBackupPhase": "Write down your 12 word backup phrase in the correct order.",
+    "backupPhraseVerificationInstructions": "Please select the correct words.",
+    "deviceRemovalConfirm": "Please confirm that the details below are correct before removing device.",
+    "loggingOutFirstMessage": "Deleting takes a moment",
+    "loggingOutSecondMessage": "Sorry to see you go",
+    "backupPhraseRevealedPurpose": "Please use this 12 word backup phrase in order to restore the wallet.",
+    "privateKeyRevealedPurpose": "Please use this private key in order to restore the wallet.",
+    "doNotShareBackup": "Keep it secure as it's the only way to recover your account in an emergency. Don't email or screenshot it.",
+    "sessionExpiredReEnterPin": "Login session expired, please enter your PIN to proceed.",
+    "addContacts": "Add contacts to address book to easily access favorite addresses for sending assets.",
+    "nativeIntegrationWarning": "The following tool gives you direct access to Smart Contracts. This is considered a professional tool and if you don't know what you're doing, please don't attempt to use this tool as it could result in loss of funds.",
+    "ownRisk": "Continue at your own risk.",
+    "riskWithType": "Your portfolio is {{type}} right now.",
+    "portfolio_riskiness": "The more you move to stables,\nthe less risk you take on.",
+    "tokenNotListedWarning": "This token is not officially listed on Uniswap. You can import and trade it at your own risk.",
+    "importTokenPermission": "I confirm that i want to import this token"
+  },
+
+  "insight": {
+    "pillarNetworkActivate": {
+      "hasNoPPNBalance": {
+        "title": "Activate Pillar Network",
+        "description": {
+          "activationBenefit": "To send any token you need to top up Pillar Tank with PLR first"
+        }
+      },
+      "smartWalletIsNotActivated": {
+        "title": "Unique benefits of Pillar Payment Network for PLR users",
+        "description": {
+          "instantTransactions": "Instant, gas-free and private transactions.",
+          "singleTokenExperience": "A single token experience including the ability to send/spend tokens you don’t already own through real-time swaps."
+        },
+        "button": {
+          "activatePPN": "Activate Pillar Network"
+        }
+      },
+      "deploying": {
+        "description": {
+          "smartWalletActivatingStatusCard": "Activating your Smart Wallet. It will be ready shortly."
+        }
+      }
+    },
+    "smartWalletActivate": {
+      "default": {
+        "title": "To send assets, activate Smart Wallet first",
+        "description": "You will have to pay a small fee"
+      },
+      "isBeingDeployed": {
+        "title": "Smart Wallet is being deployed now",
+        "description": {
+          "waitingTime": "You will be able to send assets once it's deployed. Current average waiting time is {{waitingTimeInMinutes}} mins."
+        }
+      },
+      "activationFailed": {
+        "title": "Smart Wallet activation failed",
+        "error": {
+          "needToSetupSmartAccount": "You need to top up your Smart Account first.",
+          "default": "There was an error on our server. Please try to re-activate the account by clicking the button bellow."
+        }
+      }
+    }
+  },
+
+  "form": {
+    "countryCode": {
+      "label": "Country code",
+      "placeholder": "Country name",
+      "selectorTitle": "All codes"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email",
+      "description": {
+        "empty": "Add your email to be able receive special requests.",
+        "added": "Verify your email and you will be able to invite your friends in Pillar.",
+        "confirmed": "After changing email you will have re-verify it."
+      }
+    },
+    "phoneNumber": {
+      "label": "Phone number",
+      "description": {
+        "empty": "Add your phone number to be able to invite your friends.",
+        "added": "Verify your phone number and you will be able to invite your friends in Pillar community.",
+        "confirmed": "After changing phone number you will have re-verify it."
+      }
+    },
+    "subscription": {
+      "placeholder": "Your e-mail"
+    },
+    "selector": {
+      "placeholder": "Select",
+      "searchPlaceholder": "Search",
+      "assetSearchPlaceholder": "Asset search"
+    }
+  },
+
+  "error": {
+    "transactionFailed": {
+      "timeOut": "Transaction timed out",
+      "default": "Transaction failed",
+      "offline": "You can't send transaction while offline",
+      "notEnoughGas": "Not enough gas to cover the transaction fee. Top up your ETH balance",
+      "notOwnedCollectible": "You no longer own this NFT",
+      "collectibleCantBeTransferred": "This NFT can't be transferred",
+      "notEnoughStake": "Not enough PLR in tank",
+      "cantCalculateFee": "Unable to calculate transaction fee",
+      "unableToAccessWallet": "Unable to access wallet"
+    },
+    "emptyAddress": "Address cannot be empty",
+    "contactWithAddressExists": "Contact with this address already exists",
+    "contactWithNameExists": "Contact with this name already exists",
+    "emptyName": "Name cannot be empty",
+    "invalid": {
+      "address": "Invalid address",
+      "email": "Please enter a valid email",
+      "fiatValue": "Sorry, enter a valid amount (includes 0-9 and a decimal point). Please try again."
+    },
+    "cannotSendYourself": "Sorry, you cannot send to yourself. Please use a different address.",
+    "ensNameNotFound": "Sorry, ENS name not found. Please check and try again.",
+    "notEnoughTokenForFee": "Not enough {{token}} for the transaction fee",
+    "noCameraPermission": "Camera permissions not granted - cannot open the QR scanner.",
+    "noField": {
+      "address": "No address to show",
+      "phone": "No phone to show",
+      "default": "No information to show"
+    },
+    "incorrectBackupPhraseWordsSelected": "Incorrect words selected",
+    "pin": {
+      "newShouldBeDifferent": "New pincode must be different from the current one"
+    },
+    "deviceRemovalOffline": "You need to be online in order to remove Smart Wallet device.",
+    "amount": {
+      "invalidNumber": "Incorrect number entered",
+      "exceedBalance": "Amount should not exceed total balance",
+      "shouldNotHaveDecimals": "Amount should not contain decimal places",
+      "notProvided": "Amount should be specified",
+      "shouldBeGreaterThanValue": "Amount should be greater than {{value}} {{token}}",
+      "amountShouldBeBiggerThanZero": "Amount should be bigger than 0",
+      "notEnoughToken": "Not enough {{token}}",
+      "shouldBeGreaterThan1Wei": "Amount should be greater than 1 Wei (0.000000000000000001 ETH)"
+    },
+    "synthetics": {
+      "failedToCalculate": "Failed to calculate synthetics exchange"
+    },
+    "exchange": {
+      "incorrectNumber": "Incorrect number entered",
+      "amountTooBig": "Amount should not be bigger than your balance - {{assetBalance}} {{symbol}}.",
+      "exchangeFailed": "This transaction could not be completed. Please try again."
+    },
+    "walletConnect": {
+      "assetNotSupported": "This data transaction or token is not supported in Pillar Wallet yet",
+      "unsupportedAction": "We are sorry, but we do not support this action yet",
+      "noMatchingConnector": "No matching WalletConnect connectors found, please try to connect again or contact support if the problem persists",
+      "requestNotFound": "Request not found",
+      "requestRejected": "Call Request Rejected",
+      "invalidSession": "Invalid WalletConnect session",
+      "alreadyPending": "A connection is already waiting",
+      "callRequestRejectFailed": "Call Request reject failed",
+      "callRequestApproveFailed": "Call Request approve failed",
+      "invalidRequest": "This WalletConnect request didn't look quite right - please try again ",
+      "cannotDetermineChain": "Sorry, but no chain information was found in this request. Please contact {{ dAppName }} ",
+      "cannotDetermineEthereumChain": "We couldn't see what Ethereum chain this requests belongs to - please try again",
+      "activeAccountDoesNotSupportSelectedChain": "Active account does not support selected Ethereum chain"
+    },
+    "unableToEstimateTransaction": "Unable to estimate transaction. Please try again.",
+    "theGraphQueryFailed": {
+      "liquidityPools": "Can't connect to Liquidity Pools service"
+    },
+    "unableToSendTransaction": "Unable to send transaction. Please try again.",
+    "unableToSetTransaction": "Unable to set transaction. Please try again.",
+    "unableToResetTransactions": "Unable to reset transactions. Please try again.",
+    "prismicDataFetchFailed": "Can't fetch {{prismicDocument}} data. Please try again.",
+    "noTransactionsToEstimate": "No transactions to estimate.",
+    "failedToSignMessage": "Failed to sign message",
+    "failedToBuildTransaction": "Failed to build transaction",
+    "failedToEstimateTransaction": "Failed to estimate transaction",
+    "failedToSubmitTransaction": "Failed to submit transaction",
+    "fetchTokenListFailed": "Fetching token list failed.",
+    "invalidEmailURL": "Provided URL can not be handled",
+    "failedKeychain": {
+      "title": "Your device is not supported",
+      "nonEtherspotMessage": "Due to security concerns, we don’t support devices with disabled keychain access.",
+      "etherspotMessage": "\n\nYour Etherspot wallet address: {{address}}",
+      "exitButtonText": "Exit",
+      "supportButtonText": "Support"
+    }
+  },
+
+  "home": {
+    "balance": {
+      "lastWeek": "Last week"
+    },
+    "assets": {
+      "contacts": "Contacts",
+      "services": "Services",
+      "show_balance": "Show Balances"
+    },
+    "actions": {
+      "receive": "Receive",
+      "send": "Send",
+      "swap": "Swap",
+      "connect": "Connect",
+      "invest": "Invest"
+    },
+    "apps": {
+      "title": "Apps",
+      "new": "NEW"
+    },
+    "receiveTokenWarning": {
+      "pillarDescription": "Pillar is a super-powered crypto wallet designed for efficient trading of multiple assets and leveraging up in multichain DeFi with just one tap.",
+      "stableCoinDetails": "You can pay all your fees in stablecoins and earn yield without performing multiple steps.",
+      "pillarSecure": "Due to its smart-contract architecture, Pillar is more secure than other wallets.",
+      "pillarBenefits": "To enjoy these benefits, you need to deploy your wallets, which is a one-time cost that you pay on your first transaction.",
+      "pillarDeployment1": "Pillar doesn't make any money from the deployment, we cover the costs of",
+      "pillarDeployment2": "Gnosis for you.",
+      "checkAddress": "Before sending your assets to your address, check the current deployment costs:",
+      "understood": "Got it. Don’t show this message again."
+    },
+    "investments": {
+      "title": "PLR Staking",
+      "description": "Earn ETH by staking your PLR tokens.\n{{stakedPercentage}}% PLR of the vault staked.",
+      "closeTime": "Subscription will close in {{closeTime}}",
+      "apy": "APY:"
+    }
+  },
+
+  "menu": {
+    "item": {
+      "settings": "Settings",
+      "tokens": "Tokens",
+      "addressBook": "Address book",
+      "supportChat": "Support",
+      "emailSupport": "Email support",
+      "liveChatSupport": "Live chat support",
+      "storybook": "Storybook",
+      "supportConversations": "Support conversations",
+      "knowledgebase": "Knowledgebase",
+      "liveChatActivate": "Hold 10,000 PLR tokens to activate live chat support"
+    },
+    "footer": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of service",
+      "systemInformation": "System information",
+      "signOut": "Sign out"
+    },
+    "settings": {
+      "title": "Settings",
+      "appSettings": "App settings",
+      "darkMode": "Dark mode",
+      "appearance": "Appearance",
+      "language": "Language",
+      "fiatCurrency": "Local fiat currency",
+      "biometricLogin": "Biometric login",
+      "changePin": "Change PIN",
+      "walletBackup": "Wallet backup",
+      "viewBackupPhrase": "View 12 words",
+      "viewPrivateKey": "View Private Key",
+      "backupNotFinishedWarning": "Security warning",
+      "backupComplete": "Backup complete",
+      "importWallet": "Import Wallet"
+    },
+    "selectLanguage": {
+      "title": "Language"
+    },
+    "selectCurrency": {
+      "title": "Currency"
+    },
+    "systemInformation": {
+      "title": "System Information",
+      "environment": "Environment",
+      "buildNumber": "Build number"
+    }
+  },
+
+  "history": {
+    "title": "Transactions history"
+  },
+
+  "assets": {
+    "wallet": {
+      "pillarPay": {
+        "title": "Pillar Pay",
+        "topUp": "Top up",
+        "hint": "Transfer any token for free from your PLR balance."
+      }
+    },
+    "deposits": {
+      "deposit": "Deposit"
+    },
+    "investments": {
+      "invest": "Invest"
+    },
+    "liquidityPools": {
+      "addLiquidity": "Add liquidity",
+      "poolShare": "Pool share {{share}}"
+    },
+    "rewards": {
+      "availableToClaim": "Available to claim"
+    }
+  },
+
+  "assetSelector": {
+    "title": "Select asset",
+    "choose_token_swap": "Choose token to swap",
+    "choose_token_crosschain": "Choose token to cross-chain",
+    "choose_token_send": "Choose token to send",
+    "choose_token": "Choose token on {{chain}}"
+  },
+
+  "chainAssetSelector": {
+    "title": "{{chain}} assets",
+    "tabs": {
+      "tokens": "Tokens",
+      "collectibles": "NFTs"
+    }
+  },
+
+  "walletConnect": {
+    "home": {
+      "title": "WalletConnect",
+      "switch-title": "Switch network",
+      "headerStories": "New and Noteworthy",
+      "deployOnChainFormat": "Deploy this wallet to take full advantage of using {{chain}}.",
+      "toast": {
+        "showDAppServiceLaunchError": "Sorry, we had a problem trying to open this dApp. Please try again later."
+      }
+    },
+    "requests": {
+      "messageRequest": "Signature request",
+      "transactionRequest": "Transaction request",
+      "transactionRequestFormat": "{{app}} on {{chain}}",
+      "unsupportedRequest": "Unsupported request",
+      "signMessageRequest": "Sign Message Request"
+    },
+    "connectedApps": {
+      "title": "Connected dapps",
+      "connected": "Connected",
+      "switchWallet": "Switch wallet",
+      "switchNetwork": "Switch network",
+      "disconnect": "Disconnect",
+      "etherspot": "Etherspot",
+      "plr_v1": "Pillar v1",
+      "key_based": "Keybased"
+    },
+    "disconnectModal": {
+      "title": "Disconnect",
+      "body": "Are you sure you would like to disconnect from {{app}} on {{chain}}?",
+      "disconnect": "Yes, disconnect",
+      "toast": {
+        "missingSessionUrl": "Unable to disconnect the app because session URL is missing."
+      }
+    }
+  },
+
+  "etherspot": {
+    "deploymentInterjection": {
+      "title": "Smart Wallet deployment",
+      "depositFormat": "Deposit {{symbol}} on {{chain}}",
+      "error": "Can't fetch Smart Wallet Deployment Interjection data. Please try again.",
+      "cost": "{{cost}} deployment cost will be added to your first transaction."
+    }
+  },
+
+  "contactSelector": {
+    "title": "Send to",
+    "button": {
+      "addContact": "Add to address book",
+      "skip": "Skip and just send",
+      "sendingToExchangeWarning": "I'm not sending to an exchange"
+    },
+    "error": {
+      "incorrectAddress": "Incorrect address",
+      "cannotSendToYourself": "Cannot send to yourself"
+    },
+    "sendWarning": {
+      "title": "Your funds at risk.",
+      "body": "Sending to a CEX such as Finance, Bitfinex, HitBTC, etc is not supported for smart contract based wallets. You may lose your funds if sent to centralized exchanges.",
+      "unsupportedExchanges": "Unsupported exchanges"
+    }
+  },
+
+  "unsupportedExchanges": {
+    "title": "Unsupported Exchanges",
+    "error": {
+      "prismicDataFetchFailed": "Can't fetch {{prismicDocument}} data. Please try again."
+    }
+  },
+
+  "ppnContent": {
+    "tabs": {
+      "incoming": {
+        "title": "Incoming",
+        "emptyState": {
+          "title": "No incoming transactions"
+        }
+      },
+      "sent": {
+        "title": "Sent",
+        "emptyState": {
+          "title": "No sent transactions"
+        }
+      },
+      "settled": {
+        "title": "Settled",
+        "emptyState": {
+          "title": "No settled transactions"
+        }
+      }
+    },
+    "title": {
+      "home": "Pillar Payment Network",
+      "settleTransactionsScreen": "Settle transactions",
+      "fundTankScreen": "Fund PLR tank",
+      "sendTokenViaPpnScreen": "Send {{token}} via PPN",
+      "unsettledAssetsScreen": "Unsettled Assets",
+      "withdrawFromTankScreen": "Withdraw from PLR tank"
+    },
+    "button": {
+      "fundTank": "Fund Pillar Tank",
+      "releaseTankFunds": "Release Funds",
+      "withdrawFromTank": "Withdraw from PLR tank",
+      "settleTransactions": "Settle transactions",
+      "enableSmartWalletForTank": "Enable Smart Wallet to create Tank",
+      "goToTank": "Go to PLR Tank"
+    },
+    "label": {
+      "availableBalance": "Available Balance",
+      "paidByPillar": "No fees - paid by Pillar",
+      "transactionsAvailableToSettle": "Transactions available to settle"
+    },
+    "paragraph": {
+      "introFirstParagraph": "Stake PLR tokens in your tank to enable free and instant transactions between you and your contacts. PLR acts as a meta token allowing you to send and receive any asset that is supported by the Pillar Payment Network.",
+      "introSecondParagraph": "Draw from your PLR tank to send whatever you’d like."
+    },
+    "ppnFeatures": {
+      "first": {
+        "title": "Instant.",
+        "description": "No waiting for miner or block confirmations. Seriously instant transactions."
+      },
+      "second": {
+        "title": "Free.",
+        "description": "No need to pay network costs or gas for any transactions."
+      },
+      "three": {
+        "title": "Private.",
+        "description": "Only final settlement is recorded on-chain. Batched transactions allow multiple transfers to be combined."
+      },
+      "settleTransactions": "Settle transactions"
+    }
+  },
+
+  "migrateENSContent": {
+    "banner": {
+      "title": "Re-point your ENS name to Etherspot"
+    },
+    "details": {
+      "title": "Re-point your ENS name to Etherspot",
+      "body": "Currently, your ENS name points to your legacy Smart Wallet. This means that any transactions pointing to {{ensName}} will always land in your Archanova Smart Wallet (address: {{address}}). Continue below to re-point your ENS name to your new Etherspot Smart Wallet account",
+      "migrate": "Migrate",
+      "cannotMigrate": "Sorry, we can't migrate right now. Please try again.",
+      "noAccountFound": "Sorry, no account found was found."
+    }
+  },
+
+  "walletMigrationArchanova": {
+    "banner": {
+      "title": "Migrate assets from Pillar V1 to Etherspot (Pillar V2)"
+    },
+    "intro": {
+      "title": "Migrate your assets",
+      "subtitle": "Switch to Etherspot (Pillar V2)",
+      "header": "Your account is being upgraded to a Pillar Smart Wallet.",
+      "body": "Etherspot is multi-chain ready. Polygon, Binance Smart Chain and xDai is currently supported. Migrate assets to your new Pillar v2 wallet and enjoy DeFi with low-to-no fees."
+    },
+    "status": {
+      "title": "Migration status",
+      "emptyState": "No migration transactions"
+    },
+    "selectAssets": {
+      "title": "Migration to Smart Wallet",
+      "migratingFrom": "migrating from",
+      "review": "Review"
+    },
+    "setAmount": {
+      "title": "Set amount"
+    },
+    "review": {
+      "title": "Review",
+      "header": "You are migrating",
+      "details": {
+        "header": "Migration details",
+        "fromWallet": "From Pillar V1",
+        "toWallet": "To Etherspot (Pillar V2)"
+      },
+      "assets": {
+        "header": "Selected assets"
+      },
+      "fees": {
+        "header": "Fees",
+        "ethereum": "Max. Ethereum fee",
+        "pillar": "Pillar fee",
+        "total": "Total Fee"
+      },
+      "calculateFee": "Calculate transaction fee",
+      "calculatingFee": "Calculating fee…",
+      "submit": "Submit",
+      "estimatingTransactions": "Estimating transactions…"
+    },
+    "pinConfirm": {
+      "submittingTransactions": "Submitting transactions…"
+    }
+  },
+
+  "smartWalletContent": {
+    "activationCard": {
+      "button": {
+        "activate": "Activate Smart Wallet"
+      },
+      "description": {
+        "activating": "Activating your account",
+        "default": "To start sending assets you need to activate Smart Wallet"
+      }
+    },
+    "activationModal": {
+      "paragraph": "To start sending and exchanging assets you need to activate your wallet.",
+      "title": "Activate Smart Wallet"
+    },
+    "walletActivationView": {
+      "title": "Smart Wallet is being activated",
+      "paragraph": {
+        "smartWalletActivating": "It won’t take long. While activation is in progress, feel free to explore exciting features of Pillar Smart Wallet"
+      }
+    },
+    "exchangeActivation": {
+      "message": "To start exchanging assets you need to activate your Smart Wallet",
+      "button": "Activate Smart Wallet"
+    },
+    "tabs": {
+      "tokens": {
+        "title": "Tokens"
+      },
+      "collectibles": {
+        "title": "NFTs"
+      }
+    },
+    "paragraph": {
+      "introFirstParagraph": "Your new Pillar Smart Wallet is powered by a personal smart contract. This provides better asset management, security and recovery functionality.",
+      "introSecondParagraph": "Pillar also recommends that you transfer most of your assets to your Smart Wallet due to the benefits listed.",
+      "walletIsActivated": "You can now access your new Smart Wallet and the new Pillar Payment Network from the upper right and side of the Assets screen"
+    },
+    "button": {
+      "goToSmartWallet": "Go to Smart Wallet"
+    },
+    "title": {
+      "smartWalletIsActivated": "Your Smart Wallet is now activated",
+      "walletActivatedScreen": "What's next"
+    },
+    "banner": {
+      "title": "Migrate assets from key wallet to Etherspot (Pillar V2)"
+    },
+    "intro": {
+      "title": "Time to enhance your crypto experience",
+      "header": "Your account is being upgraded to a Pillar Smart Wallet.",
+      "upgrade": {
+        "subtitle": "What is this upgrade?",
+        "body": "In a few words: Pillar is making Ethereum more accessible and laying a foundation for further improvements of Pillar platform."
+      },
+      "benefits": {
+        "secure": "Keep your funds secure in the event of losing your phone or key.",
+        "ensName": "Get your very own pillar.eth ENS address to use it across different platforms.",
+        "betterApp": "Enjoy a refreshed user interface and improved app performance."
+      },
+      "footer": "This upgrade requires a record on the blockchain. This means, a small Ethereum network fee will be added to the first transaction made with your new Pillar Smart Wallet. The fee will be extremely small thanks to Pillar Etherspot technology.",
+      "button": {
+        "upgrade": "Upgrade"
+      }
+    },
+    "confirm": {
+      "title": "Review",
+      "header": "You are migrating",
+      "details": {
+        "header": "Migration details",
+        "fromKeyWallet": "From existing key wallet",
+        "toSmartWallet": "To Smart Wallet"
+      },
+      "assets": {
+        "header": "Selected assets"
+      },
+      "fees": {
+        "header": "Fees",
+        "ethereum": "Max. Ethereum fee",
+        "pillar": "Pillar fee",
+        "total": "Total Fee"
+      },
+      "submit": "Submit"
+    }
+  },
+
+  "collectiblesList": {
+    "emptyState": {
+      "noCollectibles": {
+        "title": "No NFTs",
+        "paragraph": "There are no NFTs in this wallet"
+      },
+      "noneFound": {
+        "title": "NFT not found",
+        "paragraph": "Check if the name was entered correctly"
+      }
+    }
+  },
+
+  "settingsContent": {
+    "settingsItem": {
+      "analytics": {
+        "title": "Usage analytics",
+        "paragraph": {
+          "agreeSharingInfo": "I'm happy to share anonymous application usage statistics",
+          "legal": "By sharing application usage statistics you are helping Pillar build a better wallet. \nUsage statistics do not include any personal information from you or your contacts."
+        }
+      }
+    }
+  },
+
+  "profileContent": {
+    "title": {
+      "manage": "User settings"
+    },
+    "paragraph": {
+      "verificationIsRequired": "Verification is required to prevent scammers' activity. We care for our users privacy."
+    },
+    "modal": {
+      "updatingData": {
+        "title": "Proceed with caution",
+        "paragraph": {
+          "emailChanged": "After changing email you will have to re-verify it in order to retain the ability to invite friends and get rewarded.",
+          "phoneChanged": "After changing phone number you will have to re-verify it in order to retain the ability to invite friends and get rewarded."
+        },
+        "button": {
+          "changeEmail": "Change my email",
+          "changePhone": "Change my phone number"
+        }
+      },
+      "verification": {
+        "title": {
+          "email": "Enter verification code (email)",
+          "phone": "Enter verification code (SMS)"
+        },
+        "error": "That didn't work, please try again"
+      },
+      "profileImage": {
+        "button": {
+          "takeSelfie": "Take selfie",
+          "uploadPicture": "Upload picture",
+          "deleteAvatar": "Delete avatar"
+        }
+      },
+      "deleteAvatar": {
+        "title": "Delete avatar",
+        "paragraph": {
+          "areYouSure": "Are you sure you would like to delete your avatar?"
+        },
+        "button": {
+          "delete": "Yes, delete",
+          "cancel": "Cancel"
+        }
+      }
+    }
+  },
+
+  "relayerMigrationContent": {
+    "modal": {
+      "switch": {
+        "title": "Pay fees with PLR",
+        "paragraph": "Bye-bye ETH! After switch you will be able to pay transaction fees with PLR token. Never insufficient gas again.",
+        "button": {
+          "switch": "Switch"
+        },
+        "label": {
+          "freeSwitching": "Switching is free",
+          "switchPending": "Switch transaction is pending",
+          "waitingForConfirmation": "Waiting for confirmation..."
+        }
+      },
+      "verification": {
+        "title": {
+          "email": "Enter verification code (email)",
+          "phone": "Enter verification code (SMS)"
+        },
+        "error": "That didn't work, please try again"
+      }
+    }
+  },
+
+  "addressBookContent": {
+    "title": {
+      "allowAccess": "Access to address book"
+    },
+    "paragraph": {
+      "allowAccess": "Please grant access to your address book in order to be able to choose your phone or email contacts."
+    }
+  },
+
+  "walletConnectContent": {
+    "title": {
+      "walletConnectRequests": "Connect to {{app}} on \n {{chain}}"
+    },
+    "label": {
+      "unknownRequestName": "Unknown",
+      "requestDescription": "Description",
+      "requestLink": "Url",
+      "name": "Name",
+      "chain": "Chain"
+    },
+    "error": {
+      "smartWalletNeedToBeActivated": "Smart Wallet needs to be activated to proceed.",
+      "unsupportedRequestCallRequestType": "Unsupported Call Request type."
+    },
+    "paragraph": {
+      "undeploy_warning_1": "You are connecting to a wallet that's undeployed, you will not be able to execute any transaction, go to ",
+      "deploy_manager": "Wallet Manager",
+      "undeploy_warning_2": " to deploy.",
+      "archanova_warning": "Using Pillar v1 (Archanova) account you can only connect on Ethereum Mainnet network."
+    }
+  },
+
+  "servicesContent": {
+    "title": {
+      "servicesScreen": "Services"
+    },
+    "alert": {
+      "title": "Your wallet is not deployed",
+      "subtitle": "Please confirm that you are willing to pay {{deploymentCost}} fee for smart wallet deployment on Ethereum network",
+      "buttons": {
+        "confirm": "I confirm",
+        "cancel": "Cancel"
+      }
+    },
+    "ramp": {
+      "addCash": {
+        "title": "Buy Crypto",
+        "subTitle": "You pay with card",
+        "selectResidentModal": {
+          "title": "Select a provider",
+          "recommendation": "We recommend using sidechains with low-to-no network fees DeFi, NFTs and more.",
+          "highDeploymentFees": "Warning: High deployment fees if buying on Ethereum Mainnet",
+          "deploying": "Deploying...",
+          "options": {
+            "onRamperTitle": "Onramper",
+            "onRamperCountry": "Global",
+            "onRamperDescription": "Get the best rate from 18 supported Onramp providers with every preferred payment method and currency.",
+            "pelerinTitle": "Mt Pelerin",
+            "pelerinCountry": "Europe",
+            "pelerinDescription": "Buy with EUR and CHF with a Debit card. Cashing out from crypto available."
+          }
+        },
+        "selectNetworkModal": {
+          "title": "Select Network",
+          "subtitle": "We recommend using sidechains with low-to-no network fees DeFi, NFTs and more.",
+          "options": {
+            "sidechains": "Sidechains",
+            "recommended": "Recommended",
+            "highGasPrice": "High gas price 🔥",
+            "ethereum": "Ethereum",
+            "chainName": "Polygon, BSC, xDai"
+          },
+          "warningMessage": "Your smart wallet is not deployed on Ethereum.\n{{deploymentCost}} smart wallet deployment cost will be added to this transaction. No action required."
+        },
+        "pelerinWidget": {
+          "deployError": "Failed to deploy the Etherspot wallet, please try again later.",
+          "signatureError": "There was an error getting the signature, please try again.",
+          "currentlyDeploying": "Deploying Etherspot wallet, please try again later."
+        }
+      }
+    },
+    "liquidityPools": {
+      "title": "Liquidity Pools",
+      "description": "Stake your PLR Liquidity tokens and receive your rewards."
+    },
+    "label": {
+      "requiresActivation": "Requires activation",
+      "forSmartWallet": "For Smart Wallet"
+    }
+  },
+
+  "transactions": {
+    "title": {
+      "sendScreen": "Send on {{chain}}",
+      "sendScreenPPN": "Send on PPN",
+      "valueSelectorModal": "Choose asset",
+      "review": "Review",
+      "reviewAndConfirmScreen": "Review and confirm",
+      "allowanceTransactionSuccess": "Transaction is on its way",
+      "exchangeTransactionSuccess": "Swapping tokens...",
+      "transactionSuccess": "Tokens are on their way",
+      "collectibleTransactionSuccess": "NFT is on its way",
+      "transferAssetsToSmartWalletScreen": "Migration to Smart Wallet",
+      "amountEditScreen": "Set amount",
+      "assetsTransferToSmartWalletStatusScreen": "Key based assets migration",
+      "creatingTransactions": "Creating transactions",
+      "keyBasedAssetsMigrationComplete": "Key based assets migration complete"
+    },
+    "button": {
+      "payFeeWithPillar": "Pay fees with PLR",
+      "confirmTransaction": "Confirm Transaction",
+      "cancelUnsent": "Cancel unsent",
+      "send": "Send"
+    },
+    "label": {
+      "network": "Network",
+      "amount": "Amount",
+      "receiver": "Receiver",
+      "recipient": "Recipient",
+      "sender": "Sender",
+      "recipientEnsName": "Recipient ENS name",
+      "recipientAddress": "Recipient Address",
+      "transactionFee": "Est. Fee",
+      "assetsToSettle": "Assets to settle",
+      "recipientGet": "Recipient will get",
+      "youPay": "You will pay",
+      "noAssetsFound": "No assets found",
+      "noCollectiblesFound": "No NFTs found",
+      "fromKeyWallet": "From Key based wallet",
+      "toSmartWallet": "To Smart Wallet",
+      "tokensToTransfer": "Tokens to transfer",
+      "collectiblesToTransfer": "NFTs to transfer",
+      "data": "Data",
+      "message": "Message",
+      "address": "Address",
+      "ethFee": "Max. Ethereum fee",
+      "maximumFee": "Maximum fee",
+      "pillarFee": "Pillar fee",
+      "totalFee": "Total fee",
+      "deploymentFee": "Smart Wallet deployment fee",
+      "maxTransactionFee": "Max. transaction fee",
+      "youAreSending": "You are sending",
+      "fees": "Fees",
+      "allowancePlusEthFee": "Allowance + Maximum Fee",
+      "migratingFrom": "migrating from"
+    },
+    "paragraph": {
+      "exchangeTransactionSuccess": "It may take some time for this transaction to complete",
+      "transactionSuccess": "It will be settled in a few moments, depending on {{network}} load",
+      "typedDataMessage": "Typed Data message"
+    },
+    "emptyState": {
+      "assetsList": {
+        "title": "No assets found",
+        "paragraph": "Check if the name was entered correctly"
+      }
+    },
+    "highGasFee": {
+      "warningLabel": "Network fees are currently high. \nPillar is free and does not charge any extra fees.",
+      "pillarEthFeeDisclaimer": "Pillar does not charge any fees.\nFee displayed is the current Ethereum network fee.",
+      "deployLabel": "This is your first transaction on this network. It will automatically deploy your smart wallet. Deployment cost will be added to regular transaction fee."
+    }
+  },
+
+  "toast": {
+    "userIsOffline": "It seems you're offline. Please check your internet connection.",
+    "biometricLoginEnabled": "Biometric login enabled.",
+    "biometricLoginDisabled": "Biometric login disabled.",
+    "keyWalletAssetsTransfered": "Assets transferred. Enjoy using your Smart Wallet!",
+    "somethingWentWrong": "Something went wrong, we are already investigating it. Don't worry, your funds are safe. Please try again or contact support.",
+    "failedToLogIn": "There was a problem logging you in, please try again.",
+    "PPNTopUpSuccess": "{{paymentInfo}} added to Pillar Tank.",
+    "PPNWithdrawSuccess": "{{paymentInfo}} withdrawn from Pillar Tank.",
+    "PPNSettleSuccess": "Assets settled to your wallet.",
+    "transactionSent": "{{paymentInfo}} sent.",
+    "transactionReceived": "{{paymentInfo}} received.",
+    "backendProblem": "There was a problem on our server. Don't worry, your funds are safe. Please try again or contact support.",
+    "PPNTopUp": "{{paymentInfo}} sent to Pillar Tank.",
+    "PPNWithdraw": "Withdraw of {{paymentInfo}} started. You will receive tokens soon.",
+    "PPNSettle": "Settlement started. You will receive tokens soon.",
+    "switchRelayerTokenFailed": "Can't switch fee token. Please try again.",
+    "syntheticTransactionFailed": "Can't make this transaction. Please try again.",
+    "assetHasBeenHidden": "{{assetName}} ({{assetSymbol}}) removed.",
+    "ensureBackup": "Please ensure you backup your wallet now.",
+    "walletConnectUnsupportedApp": "This app is not supported. You may request support for this app.",
+    "walletConnectUnsupportedNetwork": "This app is not supported {{chainId}} chain.",
+    "walletConnectUnsupportedWalletNetwork": "This wallet is not supported {{chain}} chain.",
+    "walletConnectConnectionsExpired": "Connections expired. Please connect again.",
+    "cantReadQRCode": "Can't read this QR code. Try once again or use another image.",
+    "incorrectQRCode": "QR code is incorrect.",
+    "transactionFeeEstimationFailed": "Can't estimate transaction fee. Please try again.",
+    "walkthroughFailed": "Something went wrong. Please try again.",
+    "chainAddressCopiedToClipboard": "{{chain}} wallet address copied to clipboard.",
+    "addressCopiedToClipboard": "Address copied to clipboard.",
+    "ensNameCopiedToClipboard": "ENS name copied to clipboard.",
+    "forbiddenToRemoveAsset": "{{assetName}} ({{assetSymbol}}) can't be removed. It's essential for Pillar.",
+    "failedToGetFaceIDPermission": "Face ID restricted for Pillar. You can change it in your phone settings.",
+    "subscribedToNewsletter": "Subscribed to newsletter.",
+    "subscriptionToNewsletterFailed": "Can't subscribe to newsletter. Please try again.",
+    "cantInviteYourself": "You can't invite yourself.",
+    "invalidPhoneNumber": "Phone number should have country code.",
+    "dailyInvitationsLimitReached": "You have {{remainingDailyInvitations}} remaining invitations today. Max {{allowedDailyUpdates}} per day",
+    "ensNameNotFound": "ENS name not found. Try different name.",
+    "transactionStarted": "{{paymentInfo}} sent.",
+    "tooManyTransactionsToSettle": "You can settle only {{maxTxToSettle}} transactions at once. You can settle more in another batch.",
+    "notEnoughForTransactionFee": "Not enough {{feeSymbol}} to pay for transaction fee.",
+    "languageChanged": "Language changed.",
+    "languageChangeFailed": "Can't change language. Please try again.",
+    "serviceLaunchFailed": "Sorry, we had a problem trying to open this service. Please try again later.",
+    "exchangeAllowanceFailed": "We are sorry. Token allowance could not be set. Please try again.",
+    "contactUpdated": "{{name}} updated.",
+    "contactDeleted": "{{name}} removed from address book.",
+    "contactAdded": "{{name}} added to address book.",
+    "smartWalletActivationUnavailable": "Activation is temporarily unavailable. Please try again later",
+    "languageChangedWithSomeTranslationsMissing": "Language changed, but some translations might be missing. We're actively working on it.",
+    "languageIsNoLongerSupported": "Sorry, your selected language is no longer supported. It's been changed to default language.",
+    "languageIsNotSupported": "Sorry, this language is not supported.",
+    "failedToUploadImage": "Failed to get image from the gallery. Please try again.",
+    "failedToDeleteAvatar": "Failed to delete avatar. Please try again.",
+    "failedToCreateOrder": "An error occured. This offer cannot be accepted. Please try again.",
+    "cannotFindDeploymentHash": "Cannot find deployment hash. Please try again.",
+    "cannotFindTransactionHash": "Cannot find transaction hash. Please try again.",
+    "cannotGetBlockchainExplorerLink": "Cannot get blockchain explorer link. Please try again.",
+    "cannotGetWalletAddress": "Cannot get wallet address.",
+    "cannotEnableAsset": "Cannot enable asset. Please try again.",
+    "cannotCreateStream": "Cannot create stream. Please try again.",
+    "cannotCancelStream": "Cannot cancel stream. Please try again.",
+    "cannotPurchaseTicket": "Cannot purchase ticket. Please try again.",
+    "cannotWithdraw": "Cannot withdraw. Please try again.",
+    "cannotDepositAsset": "Cannot deposit asset. Please try again.",
+    "cannotWithdrawAsset": "Cannot withdraw asset. Please try again.",
+    "failedToEstimateTransactionWithMessage": "Failed to estimate transaction: \"{{message}}\"",
+    "walletBackedUp": "Your wallet is backed up now.",
+    "poolDataFetchFailed": "Can't fetch liquidity pools data. Please try again or contact support.",
+    "cannotAddLiquidity": "Cannot add liquidity. Please try again.",
+    "cannotStakeTokens": "Cannot stake tokens. Please try again.",
+    "cannotUnstakeTokens": "Cannot unstake tokens. Please try again.",
+    "cannotRemoveLiquidity": "Cannot remove liquidity. Please try again.",
+    "liquidityPoolsAddLiquidity": "{{value}} {{token}} received.",
+    "liquidityPoolsRemoveLiquidity": "{{value}} {{token}} removed from liquidity.",
+    "liquidityPoolsStake": "{{value}} {{token}} staked.",
+    "liquidityPoolsUnstake": "{{value}} {{token}} removed from liquidity.",
+    "liquidityPoolsClaimRewards": "{{value}} {{token}} claimed.",
+    "noActiveAccountFound": "No active account found.",
+    "walletConnectFailed": "WalletConnect failed.",
+    "walletConnectCallRequestApproveFailed": "Failed to approve Call Request.",
+    "walletConnectCallRequestRejectFailed": "Failed to reject Call Request.",
+    "walletConnectRequestRejected": "WalletConnect Call Request rejected.",
+    "walletConnectRequestApproved": "WalletConnect Call Request approved.",
+    "ensMigrationCannotProceed": "Sorry, ENS migration cannot proceed.",
+    "ensMigrationFailed": "Sorry, ENS migration failed.",
+    "cannotSendSyntheticAsset": "Sorry, asset cannot be sent.",
+    "failedToGetGasPrices": "Failed to get gas prices.",
+    "waitingForWalletConnectConnection": "Waiting for WalletConnect service…",
+    "transactionReverted": "Something went wrong. Try again or tap this message for details.",
+    "seedPhraseCopiedToClipboard": "12 words copied to clipboard",
+    "privateKeyCopiedToClipboard": "Private Key copied to clipboard",
+    "missingCopyAddress": "Sorry, cannot copy address to the clipboard"
+  },
+
+  "exchangeContent": {
+    "providers": {
+      "uniswap": "Uniswap",
+      "oneInch": "1 Inch",
+      "synthetix": "Synthetix",
+      "sushiswap": "Sushiswap",
+      "honeyswap": "Honeyswap",
+      "paraswap": "Paraswap",
+      "lifi": "Lifi"
+    },
+    "modal": {
+      "smartWalletIsNotActive": {
+        "title": "Use Smart Wallet account",
+        "paragraph": "Please select your Smart Wallet account to buy cryptocurrency.",
+        "button": {
+          "selectAccount": "Select account"
+        }
+      }
+    },
+    "title": {
+      "exchange": "Swap on {{chain}}",
+      "crossChain": "Cross-chain bridge",
+      "initialExchange": "Swap",
+      "confirm": "Review"
+    },
+    "label": {
+      "exchangeDetails": "Exchange details",
+      "network": "Network",
+      "exchangeRate": "Exchange rate",
+      "estFee": "Est. fee",
+      "estTime": "Estimated time",
+      "exchangeRateLayout": "{{rate}} {{toAssetCode}}/{{fromAssetCode}}",
+      "maxSlippage": "Max. slippage"
+    },
+    "tooltip": {
+      "feeFormat": "{{provider}} will be allowed to automate transactions on your behalf. Ethereum fee could be lower."
+    },
+    "emptyState": {
+      "offers": {
+        "title": "No live offers",
+        "paragraph": "Currently no matching offers from exchange services are provided."
+      },
+      "routes": {
+        "title": "No routes available",
+        "paragraph": "Currently no matching routes from cross-chain services are provided."
+      }
+    },
+    "gas_fee_asset": {
+      "title": "Paying fees with",
+      "left": "left"
+    }
+  },
+
+  "alert": {
+    "deleteContact": {
+      "title": "Delete address",
+      "message": "Are you sure you would like to remove {{name}} from address book?",
+      "button": {
+        "cancel": "Cancel",
+        "ok": "Confirm"
+      }
+    },
+    "hideAsset": {
+      "title": "Are you sure?",
+      "message": "This will hide {{asset}} from your wallet",
+      "button": {
+        "cancel": "Cancel",
+        "ok": "Hide"
+      }
+    },
+    "logOut": {
+      "title": "Logout",
+      "message": "After logging out you will not be able to log in back to this wallet without 12 words backup.",
+      "button": {
+        "cancel": "Cancel",
+        "ok": "Confirm"
+      }
+    },
+    "attemptToLogOutWithoutBackup": {
+      "title": "Logout",
+      "message": "You can logout only after securing your 12 words backup phrase.",
+      "button": {
+        "cancel": "Cancel",
+        "backup": "Backup 12 words"
+      }
+    },
+    "walletConnectDisconnect": {
+      "title": "Disconnect from {{name}}",
+      "message": "Please confirm disconnect from {{name}}.",
+      "button": {
+        "cancel": "Cancel",
+        "ok": "Disconnect"
+      }
+    },
+    "addressIsNotOnPillarNetwork": {
+      "title": "This address is not on Pillar Network",
+      "message": "Invite it's owner to install Pillar wallet in order to be able to send instant transactions for free or switch to Ethereum Mainnet to send regular transaction.",
+      "button": {
+        "switchToMainnet": "Switch to Ethereum Mainnet",
+        "cancel": "Cancel"
+      }
+    },
+    "removeConnectedDevice": {
+      "title": "Are you sure?",
+      "message": "You are going to remove the link between this device and your account.\n\nPlease make sure you have all your funds backed up.",
+      "button": {
+        "cancel": "Cancel",
+        "ok": "Confirm remove"
+      }
+    },
+    "contactsPermission": {
+      "title": "Contacts",
+      "message": "This app would like to view your contacts.",
+      "button": {
+        "ok": "Allow"
+      }
+    }
+  },
+
+  "notification": {
+    "transactionReceivedPending": "{{tokenValue}} is coming shortly.",
+    "transactionReceivedConfirmed": "{{tokenValue}} received.",
+    "transactionSentPending": "{{tokenValue}} is being sent.",
+    "transactionSentConfirmed": "{{tokenValue}} sent.",
+    "receivedCollectible": "You received an NFT.",
+    "collectibleSentAndReceived": "Your NFT has been received.",
+    "notification_enable": "Let's be in touch",
+    "notification_error": "Please enable Notifications from the settings."
+  },
+
+  "graph": {
+    "timeRangeButtons": {
+      "day": "1 D",
+      "week": "7 D",
+      "month": "30 D",
+      "halfYear": "6 M",
+      "year": "1 Y",
+      "all": "ALL "
+    }
+  },
+
+  "liquidityPoolsContent": {
+    "title": {
+      "addLiquidity": "Add liquidity",
+      "addLiquidityReview": "Review",
+      "stakeTokens": "Stake tokens",
+      "stakeTokensReview": "Review",
+      "unstakeTokens": "Unstake tokens",
+      "unstakeTokensReview": "Review",
+      "removeLiquidity": "Remove liquidity",
+      "removeLiquidityReview": "Review",
+      "claimRewardsReview": "Review",
+      "liquidityPools": "Liquidity Pools",
+      "infoScreen": "Liquidity Pools"
+    },
+    "button": {
+      "addLiquidity": "Add liquidity",
+      "addLiquidityWrapped": "Add\nliquidity",
+      "removeLiquidity": "Remove liquidity",
+      "removeLiquidityWrapped": "Remove\nliquidity",
+      "stake": "Stake",
+      "unstake": "Unstake",
+      "claimRewards": "Claim rewards"
+    },
+    "label": {
+      "staked": "Staked",
+      "rewards": "Rewards",
+      "claimedSoFar": "{{value}} {{token}} claimed so far",
+      "addLiquidityToStartEarning": "Add liquidity to start earning from staking",
+      "stakeLiquidityToGetRewards": "Stake liquidity tokens to get rewards",
+      "shareOfPool": "Share of pool",
+      "youAreAddingLiquidity": "You are adding liquidity",
+      "tokenAllocation": "Token allocation",
+      "youAreStaking": "You are staking",
+      "youAreUnstaking": "You are unstaking",
+      "youAreRemovingLiquidity": "You are removing liquidity",
+      "youWillReceive": "You will receive",
+      "youAreClaiming": "You are claiming",
+      "price": "Price",
+      "volume": "Volume",
+      "weeklyRewards": "Weekly rewards",
+      "24h": "24 h",
+      "1w": "1 w",
+      "1m": "1 m",
+      "tokenPercent": "{{value}}% {{token}}",
+      "availableRewards": "Available rewards",
+      "totalLiquidity": "Total liquidity",
+      "24hVolume": "24h volume",
+      "tokenLiquidity": "{{tokenName}} liquidity",
+      "poolTokenAllocation": "Pool token allocation",
+      "yourPoolShareAllocation": "Your pool share token allocation",
+      "tokenPrice": "Token price",
+      "quantity": "Quantity",
+      "liquidityAdded": "Liquidity added",
+      "unstaked": "Unstaked",
+      "rewardsClaimed": "Rewards claimed",
+      "liquidityRemoved": "Liquidity removed",
+      "fromWalletToPool": "Wallet → {{poolName}}",
+      "fromPoolToWallet": "{{poolName}} → Wallet",
+      "24hFees": "24h fees"
+    },
+    "tabs": {
+      "active": "Available",
+      "purchased": "Liquidity added",
+      "staked": "Staked"
+    },
+    "infoContent": {
+      "subtitle": {
+        "whatAreLiquidityPools": "What are Liquidity Pools?",
+        "howDoLiquidityPoolsWork": "How Do Liquidity Pools Work?"
+      },
+      "paragraph": {
+        "whatAreLiqudityPools": "Liquidity pools, in essence, are pools of tokens that are locked in a smart contract. They are used to facilitate trading by providing liquidity and are extensively used by some of the decentralized exchanges a.k.a DEXes.",
+        "howDoLiquidityPoolsWork": "In its basic form, a single liquidity pool holds 2 tokens and each pool creates a new market for that particular pair of tokens. DAI/ETH can be a good example of a popular liquidity pool on Uniswap.\n\nWhen a new pool is created, the first liquidity provider is the one that sets the initial price of the assets in the pool. The liquidity provider is incentivised to supply an equal value of both tokens to the pool. If the initial price of the tokens in the pool diverges from the current global market price, it creates an instant arbitrage opportunity that can result in lost capital for the liquidity provider. This concept of supplying tokens in a correct ratio remains the same for all the other liquidity providers that are willing to add more funds to the pool later.\n\nWhen liquidity is supplied to a pool, the liquidity provider (LP) receives special tokens called LP tokens in proportion to how much liquidity they supplied to the pool. When a trade is facilitated by the pool a 0.3% fee is proportionally distributed amongst all the LP token holders. If the liquidity provider wants to get their underlying liquidity back, plus any accrued fees, they must burn their LP tokens.\n\nEach token swap that a liquidity pool facilitates results in a price adjustment according to a deterministic pricing algorithm. This mechanism is also called an automated market maker (AMM) and liquidity pools across different protocols may use a slightly different algorithm."
+      },
+      "insight": {
+        "title": "Add liquidity to start earning from staking",
+        "button": "Explore pools"
+      }
+    },
+    "depositsList": {
+      "title": "Liquidity Pools"
+    },
+    "modal": {
+      "stakingEnabled": {
+        "stakingUnlocked": "Staking unlocked",
+        "liquidityAdded": "Liquidity added",
+        "stakeYourTokens": "Stake your tokens to get more interest and extra rewards.",
+        "stakeTokensButton": "Stake tokens",
+        "laterButton": "Later"
+      }
+    }
+  },
+
+  "receiveModal": {
+    "etherspotSingleAddressInfo": "All chains use single wallet address.",
+    "notDeployedWarning": "Receive <0>{{chain}}</0> assets",
+    "withCaution": "with caution.",
+    "title": "Receive",
+    "copyButton": "Address",
+    "activationText": "You need to activate your smart wallet first.",
+    "activateText": "Activate",
+    "notDeployedText": "⚠️ Sending tokens is unavailable. Currently you can only receive tokens in <0>{{chain}}</0> wallet",
+    "etherspotTitle": "Etherspot Account",
+    "deployedOn": "Smart Contract based wallets on {{deployed}} are already deployed.",
+    "ethereumWarning": "Sending assets on Ethereum to this wallet comes with",
+    "additionalFee": "an additional fee",
+    "checkDeploymentStatus": "Check Deployment Status"
+  },
+
+  "tooltip": {
+    "switchAccountsByTappingHere": "You can switch accounts by tapping here",
+    "start_by_cash": "Start by adding cash",
+    "switch_account": "Switched to your Key Wallet for the Etherspot Dashboard",
+    "signInDeFi": "Sign in to DeFi",
+    "includesDeploymentFee": "One-time Smart Wallet deployment fee",
+    "registerENS": "Register your unique ENS name"
+  },
+
+  "governanceCall": {
+    "banner": {
+      "title": "Governance Call",
+      "live": "LIVE"
+    }
+  },
+
+  "biometricLogin": {
+    "title": "Sign in with {{biometryType}}",
+    "description": "Enable biometric login instead of typing PIN every time",
+    "enableBiometric": "Enable Biometrics\nfor easy access",
+    "button": {
+      "enable": "Enable",
+      "cancel": "Skip"
+    }
+  },
+
+  "backupWallet": {
+    "intro": {
+      "title": "Backup your wallet",
+      "subtitle": "Your funds may be at risk ",
+      "seedPhraseWarning": "On the blockchain, there is no traditional account tied to email or phone number. Instead, there is a seed phrase as your “password”. If it’s lost, your funds are lost. Make sure you have your 12 words saved nice and secure.",
+      "privateKeyWarning": "Your Private key is used to restore/ import your wallet in case of device loss/change or deleting your wallet. Losing private key results in loss of access to your funds."
+    }
+  },
+
+  "getNotifications": {
+    "title": "Enable Push Notifications",
+    "description": "Pillar will notify on your transactions status and requests from dapps. Never spam, always on point.",
+    "pillarReceiveMessage": "Receive notifications when you receive crypto.",
+    "latestUpdateMessage": "Get the latest updates on DeFi opportunities."
+  },
+
+  "transactionNotification": {
+    "selling": "Selling",
+    "you_received": "You have received",
+    "sending": "Sending",
+    "you_sent": "You have sent",
+    "to": "to",
+    "sold": "Sold",
+    "on": "on",
+    "for": "for",
+    "gas": "Gas",
+    "time": "Time"
+  },
+
+  "plrStaking": {
+    "title": "Pillar Staking",
+    "info": "Stake PLR to earn ETH on Ethereum without running a validator. Rewards are distributed quarterly after ETH validator withdrawals are live. Proportional distribution based on staked percentage of PLR pool. Staked tokens (stkPLR) are 1:1 issued, and PLR tokens are locked for 52 weeks.",
+    "limitWarning": "You need a minimum of 10,000 PLR tokens on Ethereum, swap more assets to PLR on Ethereum.",
+    "plrAvailable": "You have PLR assets on {{chainAmount}} chain{{s}}",
+    "pillar": "Pillar",
+    "etherspotWallet": "Etherspot Wallet",
+    "stakingInfoLoading": "Staking info is loading...",
+    "stakingClosingIn": "Staking will close in ",
+    "stakingClosed": "Staking is currently closed",
+    "etherspot": "Etherspot",
+    "keybased": "Keybased",
+    "archanova": "Pillar v1",
+    "wallet": "Wallet",
+    "header": {
+      "token": "Token",
+      "chain": "Chain",
+      "apy": "APY (Variable)",
+      "staked": "Staked",
+      "vaultFilling": "Vault filling",
+      "stakers": "Stakers"
+    },
+    "assetSelector": {
+      "from": "From",
+      "to": "To",
+      "on": "on {{network}}",
+      "max": "Max",
+      "balance": "Balance {{balance}}"
+    },
+    "button": {
+      "chooseAsset": "Choose Asset",
+      "stake": "Stake",
+      "processing": "Processing...",
+      "enterAmount": "Enter staking amount",
+      "calculatingFees": "Calculating fees...",
+      "insufficientAmount": "Insufficient PLR amount",
+      "fetchingRoutes": "Fetching routes...",
+      "fetchingOffers": "Fetching offers...",
+      "execute": "Execute",
+      "done": "Done"
+    },
+    "validator": {
+      "title": "Staking Pillar Validator",
+      "limitWarning": "You need to stake min 10,000 PLR.\nYou can stake up to max 250,000 PLR.",
+      "stakingFeeError": "There was an error calculating the staking fees. This could be because you don't have enough balance to pay for the gas, or there was a network error.",
+      "stakingBuildError": "There was an error forming the staking payload, please try again later.",
+      "estFee": "Est. fee:",
+      "estTime": "Est. time:",
+      "swapVia": "Swap via {{title}} on {{networkName}}",
+      "stakeOn": "Stake {{formattedAmount}} on {{networkName}}",
+      "on": "on",
+      "showLess": "Show less",
+      "showMore": "Show more",
+      "bridgeFrom": "Bridge via {{title}} from {{networkName}} to {{destinationNetworkName}}",
+      "sendFrom": "Send {{formattedValue}} to {{receiverWallet}}"
+    },
+    "chooseAsset": "Choose asset"
+  }
+}
