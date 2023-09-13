@@ -2,6 +2,7 @@
 #
 .DS_Store
 
+
 # Xcode
 #
 build/
@@ -20,7 +21,14 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+/ios/Pods/
+/ios/assets/
 ios/.xcode.env.local
+/vendor/bundle/
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+# testing
+/coverage
 
 # Android/IntelliJ
 #
@@ -40,6 +48,7 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
@@ -52,15 +61,19 @@ yarn-error.log
 **/fastlane/screenshots
 **/fastlane/test_output
 
-# Bundle artifact
+# ruby bundler
+/*/.bundle/
+/*/Gemfile.lock
+/*/vendor/
+
+# bundle artifact
 *.jsbundle
 
-# Ruby / CocoaPods
-/ios/Pods/
-/vendor/bundle/
+# other
+/.env.*
+/.npmrc
+/reports/
+package-lock.json
 
-# Temporary files created by Metro to check the health of the file watcher
-.metro-health-check*
-
-# testing
-/coverage
+# src
+src/configs/buildConfig.js

@@ -1,0 +1,130 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+fastlane_require "indentation"
+default_platform(:android)
+
+platform :android do
+
+  desc "Deploy a new version to the Google Play Staging Test Track"
+  lane :deploy_staging do
+    changelog_from_git_commits(
+     merge_commit_filtering: 'exclude_merges'
+    )
+    upload_to_play_store(
+      track: 'internal',
+      apk: 'app/build/outputs/apk/staging/app-staging.apk',
+      json_key_data: ENV['GOOGLE_JSON_DATA'],
+      version_code: ENV['APP_BUILD_NUMBER'],
+      package_name: 'com.pillarproject.wallet.staging',
+      skip_upload_aab: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      skip_upload_changelogs: true
+    )
+  end
+
+  desc "Deploy a new version to the Google Play Internal Test Track"
+  lane :deploy_internal do
+    changelog_from_git_commits(
+     merge_commit_filtering: 'exclude_merges'
+    )
+    upload_to_play_store(
+      track: 'internal',
+      apk: 'app/build/outputs/apk/release/app-release.apk',
+      json_key_data: ENV['GOOGLE_JSON_DATA'],
+      version_code: ENV['APP_BUILD_NUMBER'],
+      package_name: 'com.pillarproject.wallet',
+      skip_upload_aab: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      skip_upload_changelogs: true
+    )
+  end
+
+  desc "Deploy a new alpha version to the Google Play Store Alpha Track"
+  lane :deploy_alpha do
+  changelog_from_git_commits(
+   merge_commit_filtering: 'exclude_merges'
+  )
+	upload_to_play_store(
+		track: "alpha",
+    apk: 'app/build/outputs/apk/release/app-release.apk',
+    json_key_data: ENV['GOOGLE_JSON_DATA'],
+    version_code: ENV['APP_BUILD_NUMBER'],
+    package_name: 'com.pillarproject.wallet',
+    skip_upload_aab: true,
+    skip_upload_images: true,
+    skip_upload_screenshots: true,
+    skip_upload_changelogs: true
+	)
+  end
+
+  desc "Deploy staging development build to hockeyapp"
+  lane :deploy_android_appcenter do
+    buildApp(
+      hockeyAppToken: ENV["APPCENTER_TOKEN"],
+      apkName: 'app-staging.apk'
+    )
+  end
+
+  desc "Build custom changelog"
+  lane :build_custom_changelog do
+    changelog_notes = changelog_from_git_commits(
+      merge_commit_filtering: "include_merges",
+      commits_count: "25"
+    )
+
+    UI.message "Changelog: #{changelog_notes}"
+
+    changelog_notes
+  end
+
+  desc "Build application"
+  private_lane :buildApp do |options|
+
+    # clean
+    #gradle(
+    #  task: 'clean',
+    #  flags: '--no-daemon'
+    #)
+
+    ## build the release variant
+    #gradle(
+    #  task: 'assemble',
+    #  build_type: 'staging',
+    #  flavor: options[:flavorName],
+    #  flags: '--no-daemon'
+    #)
+
+    # Generate the changelog based on commit messages since your last tag
+    changelog = build_custom_changelog
+
+    lastCommit = last_git_commit
+
+    appcenter_upload(
+      api_token: options[:hockeyAppToken],
+      owner_name: ENV["APPCENTER_USER"],
+      owner_type: "user",
+      app_os: "Android",
+      app_name: "Pillar-Wallet-Staging-1",
+      file: "app/build/outputs/apk/staging/#{options[:apkName]}",
+      notify_testers: true,
+      release_notes: changelog
+    )
+
+  end
+
+
+end

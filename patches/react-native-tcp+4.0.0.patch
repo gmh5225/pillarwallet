@@ -1,5 +1,5 @@
 diff --git a/node_modules/react-native-tcp/android/build.gradle b/node_modules/react-native-tcp/android/build.gradle
-index c582eb7..1fc5e12 100644
+index c582eb7..d791352 100644
 --- a/node_modules/react-native-tcp/android/build.gradle
 +++ b/node_modules/react-native-tcp/android/build.gradle
 @@ -44,6 +44,6 @@ repositories {
@@ -8,9 +8,87 @@ index c582eb7..1fc5e12 100644
  dependencies {
 -    compile 'com.facebook.react:react-native:+'
 -    compile 'com.koushikdutta.async:androidasync:2.1.6'
-+    implementation('com.facebook.react:react-native:+')
-+    implementation('com.koushikdutta.async:androidasync:2.1.6')
++     implementation('com.facebook.react:react-native:+')
++     implementation('com.koushikdutta.async:androidasync:2.1.6')
  }
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/results.bin b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/results.bin
+new file mode 100644
+index 0000000..5ff383e
+--- /dev/null
++++ b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/results.bin
+@@ -0,0 +1 @@
++o/debug
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/BuildConfig.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/BuildConfig.dex
+new file mode 100644
+index 0000000..f164f9e
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/BuildConfig.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketListener.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketListener.dex
+new file mode 100644
+index 0000000..6de4d48
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketListener.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$1.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$1.dex
+new file mode 100644
+index 0000000..1b3f9c5
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$1.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$2.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$2.dex
+new file mode 100644
+index 0000000..df43210
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$2.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$3.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$3.dex
+new file mode 100644
+index 0000000..20b4e02
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$3.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$4.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$4.dex
+new file mode 100644
+index 0000000..4761464
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$4.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$5.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$5.dex
+new file mode 100644
+index 0000000..44844d9
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager$5.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager.dex
+new file mode 100644
+index 0000000..0c0267e
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketManager.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$1.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$1.dex
+new file mode 100644
+index 0000000..579c149
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$1.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$2.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$2.dex
+new file mode 100644
+index 0000000..1c3039f
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$2.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$3.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$3.dex
+new file mode 100644
+index 0000000..ae42f3b
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$3.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$4.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$4.dex
+new file mode 100644
+index 0000000..25dc3e4
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$4.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$5.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$5.dex
+new file mode 100644
+index 0000000..01ef2a3
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets$5.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets.dex
+new file mode 100644
+index 0000000..14fa546
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSockets.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketsModule.dex b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketsModule.dex
+new file mode 100644
+index 0000000..b098155
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/debug/com/peel/react/TcpSocketsModule.dex differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/desugar_graph.bin b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/desugar_graph.bin
+new file mode 100644
+index 0000000..b767fb9
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/.transforms/2ad7858be1681dde8e4b7044baadb2b2/transformed/desugar_graph.bin differ
+diff --git a/node_modules/react-native-tcp/android/build/.transforms/389a7c73d8f52cbabcbd2cdac726bffb/results.bin b/node_modules/react-native-tcp/android/build/.transforms/389a7c73d8f52cbabcbd2cdac726bffb/results.bin
+new file mode 100644
+index 0000000..1ed65e0
+--- /dev/null
++++ b/node_modules/react-native-tcp/android/build/.transforms/389a7c73d8f52cbabcbd2cdac726bffb/results.bin
+@@ -0,0 +1 @@
++i/
 diff --git a/node_modules/react-native-tcp/android/build/generated/source/buildConfig/debug/com/peel/react/BuildConfig.java b/node_modules/react-native-tcp/android/build/generated/source/buildConfig/debug/com/peel/react/BuildConfig.java
 new file mode 100644
 index 0000000..8602bda
@@ -87,6 +165,10 @@ index 0000000..9e26dfe
 @@ -0,0 +1 @@
 +{}
 \ No newline at end of file
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/compile_library_classes_jar/debug/classes.jar b/node_modules/react-native-tcp/android/build/intermediates/compile_library_classes_jar/debug/classes.jar
+new file mode 100644
+index 0000000..e770db7
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/compile_library_classes_jar/debug/classes.jar differ
 diff --git a/node_modules/react-native-tcp/android/build/intermediates/compile_r_class_jar/debug/R.jar b/node_modules/react-native-tcp/android/build/intermediates/compile_r_class_jar/debug/R.jar
 new file mode 100644
 index 0000000..228fec3
@@ -2053,11 +2135,11 @@ index 0000000..5347f17
 +int xml rn_dev_preferences 0x0
 diff --git a/node_modules/react-native-tcp/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/react-native-tcp/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
 new file mode 100644
-index 0000000..18517e4
+index 0000000..4a1721d
 --- /dev/null
 +++ b/node_modules/react-native-tcp/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
 @@ -0,0 +1 @@
-+#Tue Sep 12 14:39:21 IST 2023
++#Wed Sep 13 12:06:29 IST 2023
 diff --git a/node_modules/react-native-tcp/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/react-native-tcp/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
 new file mode 100644
 index 0000000..fb954d4
@@ -2094,6 +2176,66 @@ index 0000000..125c1f8
 +<?xml version="1.0" encoding="utf-8"?>
 +<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/admin/Downloads/pillarwallet/node_modules/react-native-tcp/android/src/main/assets"/><source path="/Users/admin/Downloads/pillarwallet/node_modules/react-native-tcp/android/build/intermediates/shader_assets/debug/out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/admin/Downloads/pillarwallet/node_modules/react-native-tcp/android/src/debug/assets"/></dataSet></merger>
 \ No newline at end of file
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/BuildConfig.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/BuildConfig.class
+new file mode 100644
+index 0000000..81b1914
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/BuildConfig.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketListener.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketListener.class
+new file mode 100644
+index 0000000..d4652bf
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketListener.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$1.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$1.class
+new file mode 100644
+index 0000000..11c1e0f
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$1.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$2.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$2.class
+new file mode 100644
+index 0000000..ace73e0
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$2.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$3.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$3.class
+new file mode 100644
+index 0000000..106bfac
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$3.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$4.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$4.class
+new file mode 100644
+index 0000000..8f96b66
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$4.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$5.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$5.class
+new file mode 100644
+index 0000000..37b2234
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager$5.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager.class
+new file mode 100644
+index 0000000..e06fa7b
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketManager.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$1.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$1.class
+new file mode 100644
+index 0000000..6c8f89b
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$1.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$2.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$2.class
+new file mode 100644
+index 0000000..e6180f1
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$2.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$3.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$3.class
+new file mode 100644
+index 0000000..76a8cff
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$3.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$4.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$4.class
+new file mode 100644
+index 0000000..17dafa2
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$4.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$5.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$5.class
+new file mode 100644
+index 0000000..9223672
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets$5.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets.class
+new file mode 100644
+index 0000000..059c31e
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSockets.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketsModule.class b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketsModule.class
+new file mode 100644
+index 0000000..c8216d4
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/javac/debug/classes/com/peel/react/TcpSocketsModule.class differ
 diff --git a/node_modules/react-native-tcp/android/build/intermediates/local_only_symbol_list/debug/R-def.txt b/node_modules/react-native-tcp/android/build/intermediates/local_only_symbol_list/debug/R-def.txt
 new file mode 100644
 index 0000000..78ac5b8
@@ -2169,6 +2311,66 @@ index 0000000..3e6b4ff
 +  "elementType": "File"
 +}
 \ No newline at end of file
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/BuildConfig.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/BuildConfig.class
+new file mode 100644
+index 0000000..81b1914
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/BuildConfig.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketListener.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketListener.class
+new file mode 100644
+index 0000000..d4652bf
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketListener.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$1.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$1.class
+new file mode 100644
+index 0000000..11c1e0f
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$1.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$2.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$2.class
+new file mode 100644
+index 0000000..ace73e0
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$2.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$3.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$3.class
+new file mode 100644
+index 0000000..106bfac
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$3.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$4.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$4.class
+new file mode 100644
+index 0000000..8f96b66
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$4.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$5.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$5.class
+new file mode 100644
+index 0000000..37b2234
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager$5.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager.class
+new file mode 100644
+index 0000000..e06fa7b
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketManager.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$1.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$1.class
+new file mode 100644
+index 0000000..6c8f89b
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$1.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$2.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$2.class
+new file mode 100644
+index 0000000..e6180f1
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$2.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$3.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$3.class
+new file mode 100644
+index 0000000..76a8cff
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$3.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$4.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$4.class
+new file mode 100644
+index 0000000..17dafa2
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$4.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$5.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$5.class
+new file mode 100644
+index 0000000..9223672
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets$5.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets.class
+new file mode 100644
+index 0000000..059c31e
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSockets.class differ
+diff --git a/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketsModule.class b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketsModule.class
+new file mode 100644
+index 0000000..c8216d4
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/intermediates/runtime_library_classes_dir/debug/com/peel/react/TcpSocketsModule.class differ
 diff --git a/node_modules/react-native-tcp/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt b/node_modules/react-native-tcp/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
 new file mode 100644
 index 0000000..fa7ef45
@@ -3657,3 +3859,7 @@ index 0000000..0f70931
 +		INJECTED from /Users/admin/Downloads/pillarwallet/node_modules/react-native-tcp/android/src/main/AndroidManifest.xml
 +		ADDED from /Users/admin/Downloads/pillarwallet/node_modules/react-native-tcp/android/src/main/AndroidManifest.xml
 +		INJECTED from /Users/admin/Downloads/pillarwallet/node_modules/react-native-tcp/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/react-native-tcp/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/react-native-tcp/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..497651e
+Binary files /dev/null and b/node_modules/react-native-tcp/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
