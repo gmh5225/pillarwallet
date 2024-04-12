@@ -218,6 +218,7 @@ class PinCodeUnlock extends React.Component<Props, State> {
             },
           });
         } else {
+          // Note: Called when the app is opened for the first time on a new day
           updateAttempts({
             pinAttemptsCount: 0,
           });
